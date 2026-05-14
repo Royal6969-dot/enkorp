@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Enkorp – Empresa peruana especializada en metales preciosos: monedas y barras de oro y plata. Inversión segura, garantizada y transparente." />
-  <title>Enkorp | Metales Preciosos – Oro y Plata en Perú</title>
+  <meta name="description" content="Enkorp – Peru's leading precious metals company. Buy and sell certified gold and silver coins and bars. Secure, transparent, expert-backed investment." />
+  <title>Enkorp | Precious Metals – Gold & Silver in Peru</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
   --navy:#0a0e1a;--navy-mid:#0d1223;--navy-light:#111827;
   --gold:#c9a84c;--gold-dark:#a07830;--gold-pale:#e8d5a3;--gold-glow:rgba(201,168,76,.18);
-  --cream:#f5f0e8;--cream-dark:#e8e0d0;--white:#ffffff;
-  --border:rgba(201,168,76,.15);--border-mid:rgba(201,168,76,.3);
+  --cream:#f5f0e8;--border:rgba(201,168,76,.15);--border-mid:rgba(201,168,76,.3);
   --text-muted:rgba(245,240,232,.55);--text-body:rgba(245,240,232,.82);
   --ff-head:'Playfair Display',Georgia,serif;--ff-body:'Inter',system-ui,sans-serif;
   --radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:32px;
   --shadow-gold:0 4px 24px rgba(201,168,76,.25);--shadow-card:0 8px 40px rgba(0,0,0,.45);
-  --transition:.3s cubic-bezier(.4,0,.2,1);--transition-slow:.6s cubic-bezier(.4,0,.2,1);
+  --t:.3s cubic-bezier(.4,0,.2,1);
 }
 html{scroll-behavior:smooth;font-size:16px;}
-body{font-family:var(--ff-body);background-color:var(--navy);color:var(--cream);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+body{font-family:var(--ff-body);background:var(--navy);color:var(--cream);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 img,svg{display:block;max-width:100%;}
 a{color:inherit;text-decoration:none;}
 ul{list-style:none;}
@@ -30,23 +29,22 @@ address{font-style:normal;}
 .container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
 .section{padding:100px 0;}
 .gold-italic{font-style:italic;color:var(--gold);}
-.section-tag{display:inline-block;font-family:var(--ff-body);font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.section-tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
 .section-title{font-family:var(--ff-head);font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:700;line-height:1.15;color:var(--cream);margin-bottom:20px;}
 .section-subtitle{font-size:1.05rem;color:var(--text-body);max-width:560px;margin:0 auto;}
 .section-header{text-align:center;margin-bottom:64px;}
-.section-title-accent{width:80px;height:3px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold-pale) 50%,var(--gold) 70%,transparent);margin:20px auto 28px;border-radius:2px;}
-.section-title-accent--left{margin:20px 0 28px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-pale) 40%,transparent);}
-.wavy-divider{line-height:0;margin:0;padding:0;overflow:hidden;}
-.wavy-divider svg{width:100%;height:60px;display:block;}
-.wavy-divider--hero{background:var(--navy);}
-.wavy-divider--stats{background:var(--navy-light);}
-.wavy-divider--services{background:var(--navy);}
-.wavy-divider--products{background:var(--navy-mid);}
-.wavy-divider--gallery{background:#080c18;}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-family:var(--ff-body);font-size:.9rem;font-weight:700;letter-spacing:.04em;border:none;cursor:pointer;transition:var(--transition);box-shadow:var(--shadow-gold);white-space:nowrap;}
+.section-accent{width:80px;height:3px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold-pale) 50%,var(--gold) 70%,transparent);margin:20px auto 28px;border-radius:2px;}
+.section-accent--left{margin:20px 0 28px;background:linear-gradient(90deg,var(--gold),var(--gold-pale) 40%,transparent);}
+.wavy{line-height:0;overflow:hidden;}
+.wavy svg{width:100%;height:60px;display:block;}
+.wavy--hero{background:var(--navy);}
+.wavy--stats{background:var(--navy-light);}
+.wavy--services{background:var(--navy);}
+.wavy--products{background:var(--navy-mid);}
+.wavy--gallery{background:#080c18;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-family:var(--ff-body);font-size:.9rem;font-weight:700;letter-spacing:.04em;border:none;cursor:pointer;transition:var(--t);box-shadow:var(--shadow-gold);white-space:nowrap;}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,.4);background:linear-gradient(135deg,var(--gold-pale),var(--gold));}
-.btn-primary:active{transform:translateY(0);}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--radius-sm);background:transparent;color:var(--cream);font-family:var(--ff-body);font-size:.9rem;font-weight:600;letter-spacing:.04em;border:1.5px solid var(--border-mid);cursor:pointer;transition:var(--transition);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--radius-sm);background:transparent;color:var(--cream);font-size:.9rem;font-weight:600;border:1.5px solid var(--border-mid);cursor:pointer;transition:var(--t);}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-glow);}
 .btn-large{padding:16px 36px;font-size:1rem;}
 .btn-icon{width:18px;height:18px;flex-shrink:0;}
@@ -54,26 +52,26 @@ address{font-style:normal;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .fade-up{opacity:0;transform:translateY(24px);animation:fadeUp .8s forwards;}
 @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
-.delay-1{animation-delay:.1s;}.delay-2{animation-delay:.3s;}.delay-3{animation-delay:.5s;}.delay-4{animation-delay:.7s;}
+.d1{animation-delay:.1s;}.d2{animation-delay:.3s;}.d3{animation-delay:.5s;}.d4{animation-delay:.7s;}
 
 /* NAVBAR */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:background var(--transition),padding var(--transition),box-shadow var(--transition);}
-.navbar.scrolled{background:rgba(10,14,26,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:12px 0;box-shadow:0 2px 40px rgba(0,0,0,.5);border-bottom:1px solid var(--border);}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:background var(--t),padding var(--t),box-shadow var(--t);}
+.navbar.scrolled{background:rgba(10,14,26,.96);backdrop-filter:blur(16px);padding:12px 0;box-shadow:0 2px 40px rgba(0,0,0,.5);border-bottom:1px solid var(--border);}
 .nav-container{display:flex;align-items:center;gap:32px;max-width:1200px;margin:0 auto;padding:0 24px;}
-.nav-logo{display:flex;flex-direction:column;line-height:1;flex-shrink:0;text-decoration:none;}
+.nav-logo{display:flex;flex-direction:column;line-height:1;flex-shrink:0;}
 .logo-text{font-family:var(--ff-head);font-size:1.6rem;font-weight:900;letter-spacing:.06em;color:var(--cream);}
 .logo-accent{color:var(--gold);}
-.logo-tagline{font-family:var(--ff-body);font-size:.6rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:2px;}
+.logo-tagline{font-size:.6rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:2px;}
 .nav-menu{margin-left:auto;}
 .nav-links{display:flex;align-items:center;gap:8px;}
-.nav-link{padding:8px 14px;font-size:.88rem;font-weight:500;letter-spacing:.02em;color:var(--text-body);border-radius:var(--radius-sm);transition:var(--transition);position:relative;}
-.nav-link::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform var(--transition);}
+.nav-link{padding:8px 14px;font-size:.88rem;font-weight:500;color:var(--text-body);border-radius:var(--radius-sm);transition:var(--t);position:relative;}
+.nav-link::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform var(--t);}
 .nav-link:hover,.nav-link.active{color:var(--gold);}
 .nav-link:hover::after,.nav-link.active::after{transform:scaleX(1);}
 .nav-cta{margin-left:8px;}
-.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1.5px solid var(--border-mid);border-radius:var(--radius-sm);cursor:pointer;padding:8px;margin-left:auto;transition:var(--transition);}
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1.5px solid var(--border-mid);border-radius:var(--radius-sm);cursor:pointer;padding:8px;margin-left:auto;transition:var(--t);}
 .hamburger:hover{border-color:var(--gold);}
-.ham-line{display:block;width:100%;height:1.5px;background:var(--cream);border-radius:2px;transition:var(--transition);}
+.ham-line{display:block;width:100%;height:1.5px;background:var(--cream);border-radius:2px;transition:var(--t);}
 .hamburger.active .ham-line:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .hamburger.active .ham-line:nth-child(2){opacity:0;transform:scaleX(0);}
 .hamburger.active .ham-line:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
@@ -84,25 +82,24 @@ address{font-style:normal;}
 .hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;}
 .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,26,.88) 0%,rgba(10,14,26,.72) 50%,rgba(10,10,20,.82) 100%),linear-gradient(to bottom,rgba(201,168,76,.06) 0%,transparent 40%,rgba(10,14,26,.6) 100%);}
 .hero-particles{position:absolute;inset:0;overflow:hidden;}
-.particle{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;animation:particleDrift linear infinite;opacity:0;}
-@keyframes particleDrift{0%{opacity:0;transform:translateY(0) scale(0);}10%{opacity:.6;}90%{opacity:.3;}100%{opacity:0;transform:translateY(-120vh) scale(1.5);}}
+.particle{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;animation:pdrift linear infinite;opacity:0;}
+@keyframes pdrift{0%{opacity:0;transform:translateY(0) scale(0);}10%{opacity:.6;}90%{opacity:.3;}100%{opacity:0;transform:translateY(-120vh) scale(1.5);}}
 .hero-content{position:relative;z-index:2;max-width:860px;padding:120px 24px 80px;}
 .hero-eyebrow{display:flex;align-items:center;justify-content:center;gap:16px;font-size:.75rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;}
 .eyebrow-line{display:inline-block;width:40px;height:1px;background:var(--gold);opacity:.6;}
 .hero-title{font-family:var(--ff-head);font-size:clamp(3.2rem,8vw,6rem);font-weight:900;line-height:1.05;color:var(--cream);margin-bottom:28px;letter-spacing:-.02em;text-shadow:0 4px 32px rgba(0,0,0,.5);}
 .hero-subtitle{font-size:clamp(1rem,2vw,1.25rem);color:rgba(245,240,232,.9);max-width:620px;margin:0 auto 48px;line-height:1.8;text-shadow:0 2px 12px rgba(0,0,0,.4);}
-.br-desktop{display:none;}
 .hero-actions{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;}
-.hero-shimmer{position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(105deg,transparent 0%,rgba(201,168,76,.04) 40%,rgba(201,168,76,.08) 50%,rgba(201,168,76,.04) 60%,transparent 100%);animation:shimmerSweep 6s ease-in-out infinite;pointer-events:none;}
-@keyframes shimmerSweep{0%{left:-100%;}50%{left:140%;}100%{left:140%;}}
+.hero-shimmer{position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(105deg,transparent 0%,rgba(201,168,76,.04) 40%,rgba(201,168,76,.08) 50%,rgba(201,168,76,.04) 60%,transparent 100%);animation:shimmer 6s ease-in-out infinite;pointer-events:none;}
+@keyframes shimmer{0%{left:-100%;}50%{left:140%;}100%{left:140%;}}
 .hero-scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;}
 .scroll-dot{display:block;width:24px;height:40px;border:2px solid rgba(201,168,76,.5);border-radius:12px;position:relative;}
-.scroll-dot::before{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:4px;height:8px;background:var(--gold);border-radius:2px;animation:scrollBounce 2s ease-in-out infinite;}
-@keyframes scrollBounce{0%,100%{top:6px;opacity:1;}50%{top:20px;opacity:.4;}}
+.scroll-dot::before{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:4px;height:8px;background:var(--gold);border-radius:2px;animation:sbounce 2s ease-in-out infinite;}
+@keyframes sbounce{0%,100%{top:6px;opacity:1;}50%{top:20px;opacity:.4;}}
 
 /* STATS */
 .stats-bar{background:linear-gradient(135deg,var(--navy-light) 0%,#161d30 100%);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:56px 0;}
-.stats-grid{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;}
+.stats-grid{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;}
 .stat-item{text-align:center;flex:1;min-width:200px;padding:24px 32px;}
 .stat-number{display:block;font-family:var(--ff-head);font-size:clamp(2.4rem,5vw,3.5rem);font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px;}
 .stat-label{display:block;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);}
@@ -111,46 +108,45 @@ address{font-style:normal;}
 /* SERVICES */
 .services{background:var(--navy);}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-.service-card{position:relative;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);display:flex;flex-direction:column;}
+.service-card{position:relative;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--t);display:flex;flex-direction:column;}
 .service-card:hover{border-color:var(--border-mid);transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px rgba(201,168,76,.2);}
 .service-card--featured{border-color:rgba(201,168,76,.35);}
 .service-card--featured::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);z-index:2;}
 .service-badge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:20px;z-index:3;}
-.service-card-img-wrap{position:relative;height:220px;overflow:hidden;flex-shrink:0;}
-.service-card-img{width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;transition:transform .6s cubic-bezier(.4,0,.2,1);}
-.service-card-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,14,26,.3) 0%,rgba(10,14,26,.65) 100%);transition:background var(--transition);}
-.service-card:hover .service-card-img{transform:scale(1.06);}
-.service-card:hover .service-card-img-overlay{background:linear-gradient(to bottom,rgba(10,14,26,.1) 0%,rgba(10,14,26,.45) 100%);}
-.service-card-body{padding:32px 28px 36px;display:flex;flex-direction:column;flex:1;}
-.service-icon-wrap{width:60px;height:60px;margin-bottom:20px;color:var(--gold);}
-.service-icon{width:100%;height:100%;}
-.service-title{font-family:var(--ff-head);font-size:1.35rem;font-weight:700;color:var(--cream);margin-bottom:14px;}
-.service-desc{font-size:.92rem;color:var(--text-body);line-height:1.75;margin-bottom:24px;flex:1;}
-.service-link{display:inline-flex;align-items:center;gap:6px;font-size:.88rem;font-weight:600;color:var(--gold);transition:var(--transition);margin-top:auto;}
-.service-link svg{width:16px;height:16px;transition:transform var(--transition);}
-.service-link:hover{color:var(--gold-pale);}
-.service-link:hover svg{transform:translateX(4px);}
+.svc-img-wrap{position:relative;height:220px;overflow:hidden;flex-shrink:0;}
+.svc-img{width:100%;height:100%;object-fit:cover;max-width:none;transition:transform .6s cubic-bezier(.4,0,.2,1);}
+.svc-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,14,26,.3),rgba(10,14,26,.65));transition:background var(--t);}
+.service-card:hover .svc-img{transform:scale(1.06);}
+.service-card:hover .svc-img-overlay{background:linear-gradient(to bottom,rgba(10,14,26,.1),rgba(10,14,26,.45));}
+.svc-body{padding:32px 28px 36px;display:flex;flex-direction:column;flex:1;}
+.svc-icon{width:60px;height:60px;margin-bottom:20px;color:var(--gold);}
+.svc-title{font-family:var(--ff-head);font-size:1.35rem;font-weight:700;color:var(--cream);margin-bottom:14px;}
+.svc-desc{font-size:.92rem;color:var(--text-body);line-height:1.75;margin-bottom:24px;flex:1;}
+.svc-link{display:inline-flex;align-items:center;gap:6px;font-size:.88rem;font-weight:600;color:var(--gold);transition:var(--t);margin-top:auto;}
+.svc-link svg{width:16px;height:16px;transition:transform var(--t);}
+.svc-link:hover{color:var(--gold-pale);}
+.svc-link:hover svg{transform:translateX(4px);}
 
 /* PRODUCTS */
-.products{background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 100%);}
+.products{background:linear-gradient(180deg,var(--navy-mid),var(--navy));}
 .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-.product-card{background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);display:flex;flex-direction:column;}
+.product-card{background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--t);display:flex;flex-direction:column;}
 .product-card:hover{border-color:rgba(201,168,76,.4);transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 30px rgba(201,168,76,.12);}
-.product-img-wrap{position:relative;height:300px;overflow:hidden;flex-shrink:0;}
-.product-img{width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;transition:transform .5s cubic-bezier(.4,0,.2,1);}
-.product-card:hover .product-img{transform:scale(1.08);}
-.product-card-body{padding:24px 22px 28px;display:flex;flex-direction:column;flex:1;text-align:left;}
-.product-metal-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:10px;align-self:flex-start;}
-.product-metal-tag--gold{background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.3);}
-.product-metal-tag--silver{background:rgba(184,196,204,.1);color:#b8c4cc;border:1px solid rgba(184,196,204,.25);}
-.product-metal-tag--collect{background:rgba(160,120,180,.12);color:#c4a8e0;border:1px solid rgba(160,120,180,.25);}
-.product-metal-tag--industrial{background:rgba(120,180,160,.1);color:#80c4b0;border:1px solid rgba(120,180,160,.2);}
-.product-name{font-family:var(--ff-head);font-size:1.2rem;font-weight:700;color:var(--cream);margin-bottom:8px;}
-.product-desc{font-size:.875rem;color:var(--text-body);line-height:1.7;margin-bottom:14px;flex:1;}
-.product-specs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
-.product-specs span{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);background:rgba(255,255,255,.04);padding:3px 8px;border-radius:4px;}
-.product-cta{display:inline-flex;align-items:center;justify-content:center;padding:11px 24px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-size:.875rem;font-weight:700;letter-spacing:.04em;transition:var(--transition);box-shadow:var(--shadow-gold);align-self:flex-start;}
-.product-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.4);background:linear-gradient(135deg,var(--gold-pale),var(--gold));}
+.prod-img-wrap{position:relative;height:300px;overflow:hidden;flex-shrink:0;}
+.prod-img{width:100%;height:100%;object-fit:cover;max-width:none;transition:transform .5s cubic-bezier(.4,0,.2,1);}
+.product-card:hover .prod-img{transform:scale(1.08);}
+.prod-body{padding:24px 22px 28px;display:flex;flex-direction:column;flex:1;text-align:left;}
+.prod-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:10px;align-self:flex-start;}
+.tag-gold{background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.3);}
+.tag-silver{background:rgba(184,196,204,.1);color:#b8c4cc;border:1px solid rgba(184,196,204,.25);}
+.tag-collect{background:rgba(160,120,180,.12);color:#c4a8e0;border:1px solid rgba(160,120,180,.25);}
+.tag-industrial{background:rgba(120,180,160,.1);color:#80c4b0;border:1px solid rgba(120,180,160,.2);}
+.prod-name{font-family:var(--ff-head);font-size:1.2rem;font-weight:700;color:var(--cream);margin-bottom:8px;}
+.prod-desc{font-size:.875rem;color:var(--text-body);line-height:1.7;margin-bottom:14px;flex:1;}
+.prod-specs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
+.prod-specs span{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);background:rgba(255,255,255,.04);padding:3px 8px;border-radius:4px;}
+.prod-cta{display:inline-flex;align-items:center;justify-content:center;padding:11px 24px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-size:.875rem;font-weight:700;letter-spacing:.04em;transition:var(--t);box-shadow:var(--shadow-gold);align-self:flex-start;cursor:pointer;border:none;}
+.prod-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.4);background:linear-gradient(135deg,var(--gold-pale),var(--gold));}
 
 /* GALLERY */
 .gallery{background:#080c18;padding:100px 0;}
@@ -158,46 +154,46 @@ address{font-style:normal;}
 .gallery-item{position:relative;overflow:hidden;border-radius:var(--radius-md);border:1px solid var(--border);cursor:pointer;height:260px;}
 .gallery-item--tall{grid-row:span 2;height:auto;min-height:536px;}
 .gallery-item--wide{grid-column:span 2;}
-.gallery-img{width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;transition:transform .55s cubic-bezier(.4,0,.2,1);}
-.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,14,26,.85) 0%,rgba(10,14,26,.2) 50%,transparent 100%);display:flex;align-items:flex-end;padding:20px;transition:background var(--transition);}
-.gallery-label{font-family:var(--ff-head);font-size:1rem;font-weight:600;color:var(--cream);letter-spacing:.02em;transform:translateY(4px);transition:transform var(--transition),color var(--transition);}
+.gallery-img{width:100%;height:100%;object-fit:cover;max-width:none;transition:transform .55s cubic-bezier(.4,0,.2,1);}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,14,26,.85) 0%,rgba(10,14,26,.2) 50%,transparent 100%);display:flex;align-items:flex-end;padding:20px;transition:background var(--t);}
+.gallery-label{font-family:var(--ff-head);font-size:1rem;font-weight:600;color:var(--cream);transform:translateY(4px);transition:transform var(--t),color var(--t);}
 .gallery-item:hover .gallery-img{transform:scale(1.06);}
-.gallery-item:hover .gallery-overlay{background:linear-gradient(to top,rgba(10,14,26,.7) 0%,rgba(201,168,76,.08) 60%,transparent 100%);}
+.gallery-item:hover .gallery-overlay{background:linear-gradient(to top,rgba(10,14,26,.7),rgba(201,168,76,.08) 60%,transparent);}
 .gallery-item:hover .gallery-label{transform:translateY(0);color:var(--gold-pale);}
-.gallery-item::after{content:'';position:absolute;inset:0;border-radius:var(--radius-md);border:1.5px solid transparent;transition:border-color var(--transition);pointer-events:none;}
+.gallery-item::after{content:'';position:absolute;inset:0;border-radius:var(--radius-md);border:1.5px solid transparent;transition:border-color var(--t);pointer-events:none;}
 .gallery-item:hover::after{border-color:rgba(201,168,76,.4);}
 
 /* ABOUT */
 .about{background:var(--navy);overflow:hidden;}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
 .about-content{order:1;}.about-visual{order:2;}
-.about-img-frame{position:relative;border-radius:var(--radius-xl);overflow:hidden;border:2px solid rgba(201,168,76,.3);box-shadow:0 0 0 6px rgba(201,168,76,.06),var(--shadow-card);aspect-ratio:4/5;max-width:480px;margin-left:auto;}
-.about-img-frame::before{content:'';position:absolute;top:0;left:0;width:60px;height:60px;border-top:3px solid var(--gold);border-left:3px solid var(--gold);border-radius:var(--radius-md) 0 0 0;z-index:2;opacity:.8;}
-.about-img-frame::after{content:'';position:absolute;bottom:0;right:0;width:60px;height:60px;border-bottom:3px solid var(--gold);border-right:3px solid var(--gold);border-radius:0 0 var(--radius-md) 0;z-index:2;opacity:.8;}
-.about-img{width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;display:block;transition:transform .6s ease;}
-.about-img-frame:hover .about-img{transform:scale(1.04);}
+.about-frame{position:relative;border-radius:var(--radius-xl);overflow:hidden;border:2px solid rgba(201,168,76,.3);box-shadow:0 0 0 6px rgba(201,168,76,.06),var(--shadow-card);aspect-ratio:4/5;max-width:480px;margin-left:auto;}
+.about-frame::before{content:'';position:absolute;top:0;left:0;width:60px;height:60px;border-top:3px solid var(--gold);border-left:3px solid var(--gold);border-radius:var(--radius-md) 0 0 0;z-index:2;opacity:.8;}
+.about-frame::after{content:'';position:absolute;bottom:0;right:0;width:60px;height:60px;border-bottom:3px solid var(--gold);border-right:3px solid var(--gold);border-radius:0 0 var(--radius-md) 0;z-index:2;opacity:.8;}
+.about-img{width:100%;height:100%;object-fit:cover;max-width:none;display:block;transition:transform .6s ease;}
+.about-frame:hover .about-img{transform:scale(1.04);}
 .about-badge{position:absolute;bottom:28px;left:-24px;background:linear-gradient(135deg,var(--navy-light),#141b2d);border:1px solid var(--border-mid);border-radius:var(--radius-md);padding:18px 22px;text-align:center;box-shadow:var(--shadow-card);z-index:3;}
-.about-years-num{display:block;font-family:var(--ff-head);font-size:2.4rem;font-weight:900;color:var(--gold);line-height:1;}
-.about-years-label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-top:4px;line-height:1.4;}
+.badge-num{display:block;font-family:var(--ff-head);font-size:2.4rem;font-weight:900;color:var(--gold);line-height:1;}
+.badge-label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-top:4px;line-height:1.4;}
 .about-text{font-size:1rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;}
 .values-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:36px;}
-.value-item{padding:20px 16px;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-md);text-align:center;transition:var(--transition);}
+.value-item{padding:20px 16px;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-md);text-align:center;transition:var(--t);}
 .value-item:hover{border-color:var(--border-mid);transform:translateY(-3px);}
 .value-icon{width:40px;height:40px;color:var(--gold);margin:0 auto 10px;}
 .value-name{font-family:var(--ff-head);font-size:.95rem;font-weight:700;color:var(--cream);margin-bottom:6px;}
 .value-desc{font-size:.78rem;color:var(--text-muted);line-height:1.6;}
 
 /* TESTIMONIALS */
-.testimonials{background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy-light) 100%);}
+.testimonials{background:linear-gradient(180deg,var(--navy-mid),var(--navy-light));}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.testimonial-card{background:linear-gradient(145deg,#0f1525,#0d1223);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px 28px;transition:var(--transition);display:flex;flex-direction:column;}
-.testimonial-card:hover{border-color:var(--border-mid);transform:translateY(-4px);box-shadow:var(--shadow-card);}
-.testimonial-card--featured{border-color:rgba(201,168,76,.35);background:linear-gradient(145deg,#141b2d,#0d1223);position:relative;}
-.testimonial-card--featured::before{content:'"';position:absolute;top:-8px;left:24px;font-family:var(--ff-head);font-size:8rem;color:var(--gold);opacity:.08;line-height:1;pointer-events:none;}
+.tcard{background:linear-gradient(145deg,#0f1525,#0d1223);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px 28px;transition:var(--t);display:flex;flex-direction:column;}
+.tcard:hover{border-color:var(--border-mid);transform:translateY(-4px);box-shadow:var(--shadow-card);}
+.tcard--featured{border-color:rgba(201,168,76,.35);background:linear-gradient(145deg,#141b2d,#0d1223);position:relative;}
+.tcard--featured::before{content:'"';position:absolute;top:-8px;left:24px;font-family:var(--ff-head);font-size:8rem;color:var(--gold);opacity:.08;line-height:1;pointer-events:none;}
 .stars{font-size:1.1rem;color:var(--gold);margin-bottom:20px;letter-spacing:.1em;}
-.testimonial-text{font-size:.93rem;color:var(--text-body);line-height:1.8;font-style:italic;flex:1;margin-bottom:28px;}
-.testimonial-author{display:flex;align-items:center;gap:14px;}
-.author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dark),var(--gold));display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--navy);flex-shrink:0;}
+.tcard blockquote{font-size:.93rem;color:var(--text-body);line-height:1.8;font-style:italic;flex:1;margin-bottom:28px;}
+.tcard footer{display:flex;align-items:center;gap:14px;}
+.avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dark),var(--gold));display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--navy);flex-shrink:0;}
 .author-name{display:block;font-weight:600;font-size:.9rem;color:var(--cream);font-style:normal;}
 .author-role{display:block;font-size:.78rem;color:var(--text-muted);margin-top:2px;}
 
@@ -209,7 +205,7 @@ address{font-style:normal;}
 .form-group{display:flex;flex-direction:column;margin-bottom:20px;}
 .form-label{font-size:.82rem;font-weight:600;letter-spacing:.05em;color:var(--cream);margin-bottom:8px;}
 .form-label span{color:var(--gold);}
-.form-input{background:rgba(255,255,255,.04);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;font-family:var(--ff-body);font-size:.9rem;color:var(--cream);transition:var(--transition);width:100%;outline:none;}
+.form-input{background:rgba(255,255,255,.04);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;font-family:var(--ff-body);font-size:.9rem;color:var(--cream);transition:var(--t);width:100%;outline:none;}
 .form-input::placeholder{color:var(--text-muted);}
 .form-input:focus{border-color:var(--gold);background:rgba(201,168,76,.04);box-shadow:0 0 0 3px rgba(201,168,76,.12);}
 .form-input.error{border-color:#e05252;}.form-input.success{border-color:#52c07a;}
@@ -217,13 +213,12 @@ address{font-style:normal;}
 .form-error{font-size:.78rem;color:#e05252;margin-top:5px;min-height:16px;}
 .btn-submit{width:100%;justify-content:center;padding:15px;font-size:.95rem;margin-top:4px;}
 .form-success{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;background:rgba(82,192,122,.1);border:1px solid rgba(82,192,122,.3);border-radius:var(--radius-sm);font-size:.9rem;color:#7ee0a0;}
-.contact-info-inner{padding:8px 0;}
 .contact-info-title{font-family:var(--ff-head);font-size:1.4rem;font-weight:700;color:var(--cream);margin-bottom:32px;}
 .contact-details{display:flex;flex-direction:column;gap:24px;margin-bottom:36px;}
 .contact-detail{display:flex;align-items:flex-start;gap:16px;}
 .contact-icon{width:44px;height:44px;color:var(--gold);background:var(--gold-glow);border:1px solid var(--border);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:10px;}
 .contact-detail strong{display:block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
-.contact-detail span,.contact-detail a{font-size:.92rem;color:var(--text-body);line-height:1.6;transition:color var(--transition);}
+.contact-detail span,.contact-detail a{font-size:.92rem;color:var(--text-body);line-height:1.6;transition:color var(--t);}
 .contact-detail a:hover{color:var(--gold);}
 .map-placeholder{border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border);}
 .map-inner{position:relative;}
@@ -237,35 +232,54 @@ address{font-style:normal;}
 .footer-logo{margin-bottom:20px;}
 .footer-desc{font-size:.88rem;color:var(--text-muted);line-height:1.75;max-width:300px;margin-bottom:28px;}
 .social-links{display:flex;gap:10px;}
-.social-link{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-muted);transition:var(--transition);}
+.social-link{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-muted);transition:var(--t);}
 .social-link svg{width:16px;height:16px;}
 .social-link:hover{color:var(--gold);border-color:var(--border-mid);background:var(--gold-glow);}
-.footer-nav-title{font-family:var(--ff-body);font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.footer-nav-title{font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
 .footer-nav-list{display:flex;flex-direction:column;gap:10px;}
-.footer-nav-list a{font-size:.88rem;color:var(--text-muted);transition:color var(--transition);}
+.footer-nav-list a{font-size:.88rem;color:var(--text-muted);transition:color var(--t);}
 .footer-nav-list a:hover{color:var(--gold);}
 .footer-address p{font-size:.88rem;color:var(--text-muted);margin-bottom:6px;line-height:1.6;}
 .footer-address a:hover{color:var(--gold);}
 .footer-cta{margin-top:24px;padding:10px 20px;font-size:.84rem;}
-.footer-bottom{border-top:1px solid var(--border);padding:24px 0;display:flex;align-items:center;}
+.footer-bottom{border-top:1px solid var(--border);padding:24px 0;}
 .footer-bottom .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
 .footer-copy,.footer-legal{font-size:.8rem;color:var(--text-muted);}
 
 /* BACK TO TOP */
-.back-to-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border:none;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(12px);transition:var(--transition);box-shadow:var(--shadow-gold);z-index:900;}
+.back-to-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border:none;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(12px);transition:var(--t);box-shadow:var(--shadow-gold);z-index:900;}
 .back-to-top svg{width:20px;height:20px;}
 .back-to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0);}
 .back-to-top:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(201,168,76,.4);}
 
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px);opacity:0;transition:opacity .3s;}
+.modal-overlay.open{opacity:1;}
+.modal-overlay[hidden]{display:none;}
+.modal-box{background:linear-gradient(145deg,#111827,#0d1223);border:1px solid rgba(201,168,76,.3);border-radius:20px;max-width:600px;width:100%;max-height:90vh;overflow-y:auto;position:relative;transform:translateY(24px);transition:transform .35s cubic-bezier(.4,0,.2,1);}
+.modal-overlay.open .modal-box{transform:translateY(0);}
+.modal-close{position:absolute;top:14px;right:14px;z-index:10;width:36px;height:36px;border-radius:50%;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--t);line-height:1;}
+.modal-close:hover{background:rgba(201,168,76,.3);}
+.modal-img{width:100%;height:280px;object-fit:cover;border-radius:20px 20px 0 0;max-width:none;}
+.modal-body{padding:28px 32px 36px;}
+.modal-title{font-family:var(--ff-head);font-size:1.8rem;font-weight:700;color:var(--cream);margin:12px 0 14px;}
+.modal-desc{font-size:.95rem;color:var(--text-body);line-height:1.8;margin-bottom:24px;}
+.modal-specs{width:100%;border-collapse:collapse;margin-bottom:28px;}
+.modal-specs tr{border-bottom:1px solid rgba(201,168,76,.1);}
+.modal-specs tr:last-child{border-bottom:none;}
+.modal-specs td{padding:10px 0;font-size:.88rem;}
+.modal-specs td:first-child{color:rgba(201,168,76,.8);font-weight:600;width:45%;text-transform:uppercase;font-size:.75rem;letter-spacing:.06em;}
+.modal-specs td:last-child{color:var(--text-body);}
+.modal-cta{width:100%;justify-content:center;}
+
 /* RESPONSIVE */
 @media(max-width:1024px){
-  .services-grid{grid-template-columns:repeat(2,1fr);}
-  .products-grid{grid-template-columns:repeat(2,1fr);}
+  .services-grid,.products-grid{grid-template-columns:repeat(2,1fr);}
   .gallery-grid{grid-template-columns:repeat(2,1fr);}
   .gallery-item--tall{min-height:400px;}
   .about-grid{grid-template-columns:1fr;gap:48px;}
   .about-content{order:1;}.about-visual{order:2;}
-  .about-img-frame{max-width:100%;margin:0 auto;}
+  .about-frame{max-width:100%;margin:0 auto;}
   .about-badge{left:16px;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
   .contact-grid{grid-template-columns:1fr;gap:40px;}
@@ -277,11 +291,9 @@ address{font-style:normal;}
   .nav-menu.open{right:0;}
   .nav-links{flex-direction:column;align-items:flex-start;gap:4px;}
   .nav-link{font-size:1.1rem;padding:12px 0;width:100%;}
-  .nav-link::after{bottom:8px;left:0;right:0;}
-  .services-grid{grid-template-columns:1fr;}
-  .service-card-img-wrap{height:200px;}
-  .products-grid{grid-template-columns:1fr;}
-  .product-img-wrap{height:240px;}
+  .services-grid,.products-grid,.testimonials-grid{grid-template-columns:1fr;}
+  .svc-img-wrap{height:200px;}
+  .prod-img-wrap{height:240px;}
   .gallery-grid{grid-template-columns:1fr;}
   .gallery-item--tall{grid-row:span 1;min-height:260px;height:260px;}
   .gallery-item--wide{grid-column:span 1;}
@@ -289,25 +301,20 @@ address{font-style:normal;}
   .about-badge{left:12px;bottom:16px;}
   .stats-grid{flex-direction:column;}
   .stat-divider{width:60px;height:1px;}
-  .testimonials-grid{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
   .contact-form-wrap{padding:28px 20px;}
   .footer-grid{grid-template-columns:1fr;gap:32px;}
   .footer-bottom .container{flex-direction:column;text-align:center;}
   .back-to-top{bottom:20px;right:20px;}
-  .br-desktop{display:none !important;}
-}
-@media(max-width:480px){
   .hero-actions{flex-direction:column;width:100%;}
   .hero-actions a{width:100%;justify-content:center;}
-  .service-card-body{padding:22px 18px 28px;}
+}
+@media(max-width:480px){
+  .modal-body{padding:20px 20px 28px;}.modal-img{height:200px;}
   .section-title{font-size:1.9rem;}
 }
 @media(min-width:1400px){
-  .br-desktop{display:block;}
-  .services-grid{gap:36px;}
-  .products-grid{gap:36px;}
-  .gallery-grid{gap:20px;}
+  .services-grid{gap:36px;}.products-grid{gap:36px;}.gallery-grid{gap:20px;}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
@@ -317,327 +324,342 @@ address{font-style:normal;}
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#inicio" class="nav-logo" aria-label="Enkorp inicio">
-        <span class="logo-text">ENK<span class="logo-accent">ORP</span></span>
-        <span class="logo-tagline">Metales Preciosos</span>
-      </a>
-      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Menú principal">
-        <ul class="nav-links">
-          <li><a href="#inicio" class="nav-link">Inicio</a></li>
-          <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#productos" class="nav-link">Productos</a></li>
-          <li><a href="#galeria" class="nav-link">Galería</a></li>
-          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo"><span class="logo-text">ENK<span class="logo-accent">ORP</span></span><span class="logo-tagline">Precious Metals</span></a>
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta btn-primary">Contact Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img class="hero-bg-img" src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920&q=80" alt="Gold bars" loading="eager" fetchpriority="high"/>
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow fade-up d1"><span class="eyebrow-line"></span>Peru's Trusted Precious Metals Company<span class="eyebrow-line"></span></p>
+    <h1 class="hero-title fade-up d2">Investing in<br/><em class="gold-italic">Precious Metals</em></h1>
+    <p class="hero-subtitle fade-up d3">Certified gold and silver of the highest quality for investors who demand the best.<br/>Transparency, authenticity and expert support in every transaction.</p>
+    <div class="hero-actions fade-up d4">
+      <a href="#products" class="btn-primary btn-large">Explore Our Products <svg class="btn-icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#about" class="btn-ghost btn-large">About Enkorp</a>
+    </div>
+  </div>
+  <div class="hero-shimmer" aria-hidden="true"></div>
+  <a href="#stats" class="hero-scroll-cue" aria-label="Scroll down"><span class="scroll-dot"></span></a>
+</section>
+
+<div class="wavy wavy--hero"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#111827"/></svg></div>
+
+<!-- STATS -->
+<section class="stats-bar" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><span class="stat-number" data-target="15" data-suffix="+">0</span><span class="stat-label">Years of Experience</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal"><span class="stat-number" data-target="10000" data-suffix="+">0</span><span class="stat-label">Satisfied Clients</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal"><span class="stat-number" data-target="100" data-suffix="%">0</span><span class="stat-label">Authenticity Guarantee</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wavy wavy--stats"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,60 L0,60 Z" fill="#0a0e1a"/></svg></div>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Services</span>
+      <h2 class="section-title">Everything you need to<br/><em class="gold-italic">invest with confidence</em></h2>
+      <div class="section-accent"></div>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80" alt="Gold coins for purchase" class="svc-img" loading="lazy"/><div class="svc-img-overlay"></div></div>
+        <div class="svc-body">
+          <svg class="svc-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M20 36l6-8 6 6 6-10 6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 44h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="32" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3 class="svc-title">Metal Purchasing</h3>
+          <p class="svc-desc">Acquire gold and silver coins and bars at competitive prices with internationally recognized certificates of authenticity. Your investment is backed from day one.</p>
+          <a href="#contact" class="svc-link">Learn More <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card service-card--featured reveal">
+        <div class="service-badge">Popular</div>
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Silver coins for sale" class="svc-img" loading="lazy"/><div class="svc-img-overlay"></div></div>
+        <div class="svc-body">
+          <svg class="svc-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M24 20h16l-4 8H28l-4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M24 28l-4 16h24l-4-16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M28 28v16M36 28v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <h3 class="svc-title">Metal Sales</h3>
+          <p class="svc-desc">Sell your precious metals at the best market price. Transparent evaluation, immediate payment and a secure process with no hidden intermediaries or fees.</p>
+          <a href="#contact" class="svc-link">Learn More <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80" alt="Investment advisory meeting" class="svc-img" loading="lazy"/><div class="svc-img-overlay"></div></div>
+        <div class="svc-body">
+          <svg class="svc-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M22 42V28M32 42V22M42 42V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="42" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3 class="svc-title">Investment Advisory</h3>
+          <p class="svc-desc">Our experts guide you in building a diversified precious metals portfolio tailored to your financial goals and risk profile. Personalized advice at every step.</p>
+          <a href="#contact" class="svc-link">Learn More <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="wavy wavy--services"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C180,10 360,55 540,30 C720,5 900,50 1080,25 C1260,0 1380,45 1440,20 L1440,60 L0,60 Z" fill="#0d1223"/></svg></div>
+
+<!-- PRODUCTS -->
+<section class="section products" id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Catalog</span>
+      <h2 class="section-title">Our <em class="gold-italic">Products</em></h2>
+      <div class="section-accent"></div>
+      <p class="section-subtitle">Certified pieces meeting the highest international purity and quality standards, available for immediate delivery.</p>
+    </div>
+    <div class="products-grid">
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80" alt="Gold coins" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-gold">Gold</div><h3 class="prod-name">Gold Coins</h3><p class="prod-desc">Sovereign and bullion coins of the highest purity: American Eagle, Maple Leaf, Krugerrand and more.</p><div class="prod-specs"><span>Purity: 22–24k</span><span>Certified</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="Gold bars" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-gold">Gold</div><h3 class="prod-name">Gold Bars</h3><p class="prod-desc">Ingots from 1g to 1kg at 999.9‰ purity. Ideal for long-term investment and wealth preservation.</p><div class="prod-specs"><span>Purity: 999.9‰</span><span>1g – 1kg</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Silver coins" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-silver">Silver</div><h3 class="prod-name">Silver Coins</h3><p class="prod-desc">Fine silver bullion coins from limited editions and classic series: 1 oz and collectible formats.</p><div class="prod-specs"><span>Purity: 999‰</span><span>Certified</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80&fit=crop&crop=left" alt="Silver bars" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-silver">Silver</div><h3 class="prod-name">Silver Bars</h3><p class="prod-desc">Silver ingots from 100g to 1kg, perfect for diversifying your portfolio with a lower initial investment.</p><div class="prod-specs"><span>Purity: 999‰</span><span>100g – 1kg</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1575505781330-b6d3e6f25e0a?w=600&q=80" alt="Collectible coins" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-collect">Collectibles</div><h3 class="prod-name">Collectibles</h3><p class="prod-desc">Limited-edition numismatic pieces, commemorative coins and special sets with significant collector value.</p><div class="prod-specs"><span>Limited Edition</span><span>NGC/PCGS Cert.</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+      <article class="product-card reveal">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="Industrial metalwork" class="prod-img" loading="lazy"/></div>
+        <div class="prod-body"><div class="prod-tag tag-industrial">Industrial</div><h3 class="prod-name">Industrial Metals</h3><p class="prod-desc">High-purity gold and silver granules, sheets and custom formats for industrial use, jewelry and precision manufacturing.</p><div class="prod-specs"><span>High Purity</span><span>Custom Formats</span></div><button class="prod-cta">View Details</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="wavy wavy--products"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,10 C300,55 600,0 900,35 C1100,58 1300,10 1440,40 L1440,60 L0,60 Z" fill="#080c18"/></svg></div>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Visual Collection</span>
+      <h2 class="section-title">Our <em class="gold-italic">Collection</em></h2>
+      <div class="section-accent"></div>
+      <p class="section-subtitle">Discover the beauty and value of our precious metals through each unique piece.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall reveal"><img src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80" alt="Gold coins" class="gallery-img" loading="lazy"/><div class="gallery-overlay"><span class="gallery-label">Gold Coins</span></div></div>
+      <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="Gold bars" class="gallery-img" loading="lazy"/><div class="gallery-overlay"><span class="gallery-label">Gold Bars</span></div></div>
+      <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Silver coins" class="gallery-img" loading="lazy"/><div class="gallery-overlay"><span class="gallery-label">Silver Coins</span></div></div>
+      <div class="gallery-item gallery-item--wide reveal"><img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=900&q=80" alt="Investment advisory" class="gallery-img" loading="lazy"/><div class="gallery-overlay"><span class="gallery-label">Expert Advisory</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wavy wavy--gallery"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C240,5 480,55 720,20 C960,0 1200,50 1440,15 L1440,60 L0,60 Z" fill="#0a0e1a"/></svg></div>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content reveal">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Enkorp: your partner in<br/><em class="gold-italic">precious metals</em></h2>
+        <div class="section-accent section-accent--left"></div>
+        <p class="about-text">We are a Peruvian company founded with the mission of democratizing access to precious metals investment. From Lima, we serve clients across the country with the highest professional ethics and complete transparency in every operation.</p>
+        <p class="about-text">Our team of numismatic and commodity market experts accompanies you at every stage of your investment, guaranteeing authenticity, fair pricing, and personalized advisory.</p>
+        <div class="values-grid">
+          <div class="value-item"><div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6l4 8 9 1.3-6.5 6.3 1.5 9L20 26l-8 4.6 1.5-9L7 15.3l9-1.3L20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h4 class="value-name">Trust</h4><p class="value-desc">Over 15 years building solid, long-lasting relationships with our clients.</p></div>
+          <div class="value-item"><div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4 class="value-name">Quality</h4><p class="value-desc">We only work with certified metals meeting the strictest international standards.</p></div>
+          <div class="value-item"><div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div><h4 class="value-name">Transparency</h4><p class="value-desc">Clear pricing, no hidden fees, and full traceability in every operation.</p></div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80" alt="Enkorp headquarters in Lima" class="about-img" loading="lazy"/>
+          <div class="about-badge"><span class="badge-num">15+</span><span class="badge-label">years of<br/>experience</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Testimonials</span>
+      <h2 class="section-title">What our <em class="gold-italic">clients say</em></h2>
+      <div class="section-accent"></div>
+    </div>
+    <div class="testimonials-grid">
+      <article class="tcard reveal"><div class="stars">★★★★★</div><blockquote>"I've been investing with Enkorp for three years and the experience has been excellent. Their advisors are highly professional, prices competitive, and the process completely transparent. Highly recommended."</blockquote><footer><div class="avatar"><span>CR</span></div><div><cite class="author-name">Carlos Ramírez</cite><span class="author-role">Entrepreneur, Lima</span></div></footer></article>
+      <article class="tcard tcard--featured reveal"><div class="stars">★★★★★</div><blockquote>"I started diversifying my portfolio with gold bars thanks to Enkorp's guidance. The team explained everything clearly and today I have a solid, secure investment. The most trustworthy precious metals company in Lima."</blockquote><footer><div class="avatar"><span>MV</span></div><div><cite class="author-name">María Vargas</cite><span class="author-role">Architect, Miraflores</span></div></footer></article>
+      <article class="tcard reveal"><div class="stars">★★★★★</div><blockquote>"I sold my silver coins with Enkorp and the process was fast and secure. They paid me at market price with no unjustified discounts. I would definitely work with them again without hesitation."</blockquote><footer><div class="avatar"><span>JP</span></div><div><cite class="author-name">Jorge Palomino</cite><span class="author-role">Collector, San Isidro</span></div></footer></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's talk about your<br/><em class="gold-italic">investment</em></h2>
+      <div class="section-accent"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form-wrap reveal">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" for="nombre">Full Name <span>*</span></label><input class="form-input" type="text" id="nombre" placeholder="e.g. John Smith" required/><span class="form-error" id="nombreError" role="alert"></span></div>
+            <div class="form-group"><label class="form-label" for="email">Email Address <span>*</span></label><input class="form-input" type="email" id="email" placeholder="email@example.com" required/><span class="form-error" id="emailError" role="alert"></span></div>
+          </div>
+          <div class="form-group"><label class="form-label" for="telefono">Phone Number</label><input class="form-input" type="tel" id="telefono" placeholder="+51 999 999 999"/></div>
+          <div class="form-group"><label class="form-label" for="mensaje">Message <span>*</span></label><textarea class="form-input form-textarea" id="mensaje" placeholder="Tell us about your interest in precious metals…" rows="5" required></textarea><span class="form-error" id="mensajeError" role="alert"></span></div>
+          <button type="submit" class="btn-primary btn-submit" id="formSubmit"><span class="btn-text">Send Message</span><svg class="btn-icon" viewBox="0 0 20 20" fill="none"><path d="M3 10l14-7-7 14-2-5-5-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+          <p class="form-success" id="formSuccess" role="status" hidden>✓ Message sent! We'll get back to you very soon.</p>
+        </form>
+      </div>
+      <div class="contact-info reveal">
+        <h3 class="contact-info-title">Contact Information</h3>
+        <ul class="contact-details">
+          <li class="contact-detail"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Address</strong><span>Lima, Peru<br/>San Isidro, Lima 27</span></div></li>
+          <li class="contact-detail"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Phone</strong><span><a href="tel:+51999000000">+51 999 000 000</a></span></div></li>
+          <li class="contact-detail"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Email</strong><span><a href="mailto:contact@enkorp.pe">contact@enkorp.pe</a></span></div></li>
+          <li class="contact-detail"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><strong>Hours</strong><span>Mon – Fri: 9am – 6pm<br/>Sat: 9am – 1pm</span></div></li>
         </ul>
-      </nav>
-      <a href="#contacto" class="nav-cta btn-primary">Contáctanos</a>
-      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
-        <span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="inicio" role="banner">
-    <div class="hero-bg">
-      <img class="hero-bg-img" src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920&q=80" alt="Barras de oro" loading="eager" fetchpriority="high"/>
-      <div class="hero-bg-overlay" aria-hidden="true"></div>
-      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow fade-up delay-1">
-        <span class="eyebrow-line" aria-hidden="true"></span>
-        Empresa Peruana de Confianza
-        <span class="eyebrow-line" aria-hidden="true"></span>
-      </p>
-      <h1 class="hero-title fade-up delay-2">Inversión en<br/><em class="gold-italic">Metales Preciosos</em></h1>
-      <p class="hero-subtitle fade-up delay-3">Oro y plata de calidad certificada para inversores que exigen lo mejor.<br class="br-desktop"/>Transparencia, autenticidad y respaldo experto en cada transacción.</p>
-      <div class="hero-actions fade-up delay-4">
-        <a href="#productos" class="btn-primary btn-large">Conoce Nuestros Productos <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a href="#nosotros" class="btn-ghost btn-large">Sobre Enkorp</a>
+        <div class="map-placeholder"><div class="map-inner"><svg viewBox="0 0 200 120" fill="none" class="map-svg"><rect width="200" height="120" fill="#111827" rx="8"/><path d="M10 60 Q50 40 100 55 Q150 70 190 50" stroke="#1e3a5f" stroke-width="8" fill="none" opacity=".6"/><path d="M0 80 Q60 65 120 75 Q160 82 200 70" stroke="#1e3a5f" stroke-width="5" fill="none" opacity=".4"/><line x1="30" y1="0" x2="30" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="80" y1="0" x2="80" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="130" y1="0" x2="130" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="30" x2="200" y2="30" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="60" x2="200" y2="60" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="90" x2="200" y2="90" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><circle cx="100" cy="58" r="6" fill="#c9a84c"/><circle cx="100" cy="58" r="3" fill="#0a0e1a"/><line x1="100" y1="64" x2="100" y2="75" stroke="#c9a84c" stroke-width="2"/><circle cx="100" cy="58" r="12" stroke="#c9a84c" stroke-width="1" opacity=".4"/><text x="100" y="95" text-anchor="middle" font-size="9" fill="#c9a84c" opacity=".8" font-family="Inter,sans-serif">Lima, Peru</text></svg><p class="map-label">San Isidro, Lima</p></div></div>
       </div>
     </div>
-    <div class="hero-shimmer" aria-hidden="true"></div>
-    <a href="#estadisticas" class="hero-scroll-cue" aria-label="Desplázate hacia abajo"><span class="scroll-dot"></span></a>
-  </section>
+  </div>
+</section>
 
-  <div class="wavy-divider wavy-divider--hero" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#111827"/></svg></div>
-
-  <!-- STATS -->
-  <section class="stats-bar" id="estadisticas" aria-label="Estadísticas">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal"><span class="stat-number" data-target="15" data-suffix="+">0</span><span class="stat-label">Años de Experiencia</span></div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item reveal"><span class="stat-number" data-target="10000" data-suffix="+">0</span><span class="stat-label">Clientes Satisfechos</span></div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item reveal"><span class="stat-number" data-target="100" data-suffix="%">0</span><span class="stat-label">Garantía de Autenticidad</span></div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top"><div class="container"><div class="footer-grid">
+    <div>
+      <a href="#home" class="nav-logo footer-logo"><span class="logo-text">ENK<span class="logo-accent">ORP</span></span><span class="logo-tagline">Precious Metals</span></a>
+      <p class="footer-desc">Peru's leading company in the purchase, sale and advisory of precious metals. Safe, transparent and guaranteed investment.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg></a>
+        <a href="#" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
       </div>
     </div>
-  </section>
+    <nav><h4 class="footer-nav-title">Navigation</h4><ul class="footer-nav-list"><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#products">Products</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <nav><h4 class="footer-nav-title">Products</h4><ul class="footer-nav-list"><li><a href="#products">Gold Coins</a></li><li><a href="#products">Gold Bars</a></li><li><a href="#products">Silver Coins</a></li><li><a href="#products">Silver Bars</a></li><li><a href="#products">Collectibles</a></li></ul></nav>
+    <div><h4 class="footer-nav-title">Contact</h4><address class="footer-address"><p>Lima, Peru</p><p><a href="tel:+51999000000">+51 999 000 000</a></p><p><a href="mailto:contact@enkorp.pe">contact@enkorp.pe</a></p></address><a href="#contact" class="btn-primary footer-cta">Contact Us Now</a></div>
+  </div></div></div>
+  <div class="footer-bottom"><div class="container"><p class="footer-copy">&copy; <span id="footerYear"></span> Enkorp. All rights reserved.</p><p class="footer-legal">Lima, Peru &bull; Certified Precious Metals</p></div></div>
+</footer>
 
-  <div class="wavy-divider wavy-divider--stats" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,60 L0,60 Z" fill="#0a0e1a"/></svg></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 
-  <!-- SERVICES -->
-  <section class="section services" id="servicios" aria-labelledby="services-title">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Nuestros Servicios</span>
-        <h2 class="section-title" id="services-title">Todo lo que necesitas para<br/><em class="gold-italic">invertir con seguridad</em></h2>
-        <div class="section-title-accent" aria-hidden="true"></div>
-      </div>
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <div class="service-card-img-wrap"><img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80" alt="Compra de metales" class="service-card-img" loading="lazy"/><div class="service-card-img-overlay" aria-hidden="true"></div></div>
-          <div class="service-card-body">
-            <div class="service-icon-wrap" aria-hidden="true"><svg class="service-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M20 36l6-8 6 6 6-10 6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 44h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="32" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
-            <h3 class="service-title">Compra de Metales</h3>
-            <p class="service-desc">Adquiere monedas y barras de oro y plata con precios competitivos y certificados de autenticidad internacionales. Inversión respaldada desde el primer día.</p>
-            <a href="#contacto" class="service-link">Saber más <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          </div>
-        </article>
-        <article class="service-card service-card--featured reveal">
-          <div class="service-badge">Popular</div>
-          <div class="service-card-img-wrap"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Venta de metales" class="service-card-img" loading="lazy"/><div class="service-card-img-overlay" aria-hidden="true"></div></div>
-          <div class="service-card-body">
-            <div class="service-icon-wrap" aria-hidden="true"><svg class="service-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M24 20h16l-4 8H28l-4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M24 28l-4 16h24l-4-16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M28 28v16M36 28v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-title">Venta de Metales</h3>
-            <p class="service-desc">Vende tus metales al mejor precio del mercado. Evaluación transparente, pago inmediato y proceso seguro sin intermediarios ni costos ocultos.</p>
-            <a href="#contacto" class="service-link">Saber más <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          </div>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-card-img-wrap"><img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80" alt="Asesoría de inversión" class="service-card-img" loading="lazy"/><div class="service-card-img-overlay" aria-hidden="true"></div></div>
-          <div class="service-card-body">
-            <div class="service-icon-wrap" aria-hidden="true"><svg class="service-icon" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M22 42V28M32 42V22M42 42V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="42" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
-            <h3 class="service-title">Asesoría de Inversión</h3>
-            <p class="service-desc">Nuestros expertos te guían para construir un portafolio diversificado en metales preciosos, adaptado a tus objetivos financieros y perfil de riesgo.</p>
-            <a href="#contacto" class="service-link">Saber más <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          </div>
-        </article>
-      </div>
+<!-- PRODUCT MODAL -->
+<div id="productModal" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">×</button>
+    <img class="modal-img" id="modalImg" src="" alt=""/>
+    <div class="modal-body">
+      <div id="modalTag" class="prod-tag"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <table class="modal-specs" id="modalSpecs"></table>
+      <button class="btn-primary modal-cta" id="modalCta">Request a Quote</button>
     </div>
-  </section>
+  </div>
+</div>
 
-  <div class="wavy-divider wavy-divider--services" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C180,10 360,55 540,30 C720,5 900,50 1080,25 C1260,0 1380,45 1440,20 L1440,60 L0,60 Z" fill="#0d1223"/></svg></div>
-
-  <!-- PRODUCTS -->
-  <section class="section products" id="productos" aria-labelledby="products-title">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Catálogo</span>
-        <h2 class="section-title" id="products-title">Nuestros <em class="gold-italic">Productos</em></h2>
-        <div class="section-title-accent" aria-hidden="true"></div>
-        <p class="section-subtitle">Piezas certificadas con los más altos estándares de pureza y calidad, disponibles para entrega inmediata.</p>
-      </div>
-      <div class="products-grid">
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80" alt="Monedas de oro" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--gold">Oro</div><h3 class="product-name">Monedas de Oro</h3><p class="product-desc">Monedas soberanas y bullion de alta pureza: American Eagle, Maple Leaf, Krugerrand y más.</p><div class="product-specs"><span>Pureza: 22–24k</span><span>Certificadas</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="Barras de oro" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--gold">Oro</div><h3 class="product-name">Barras de Oro</h3><p class="product-desc">Lingotes de 1g a 1kg de pureza 999.9‰. Ideales para inversión de largo plazo y reserva de valor.</p><div class="product-specs"><span>Pureza: 999.9‰</span><span>1g – 1kg</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Monedas de plata" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--silver">Plata</div><h3 class="product-name">Monedas de Plata</h3><p class="product-desc">Monedas de plata pura de ediciones limitadas y bullion clásico: 1 oz y formatos coleccionables.</p><div class="product-specs"><span>Pureza: 999‰</span><span>Certificadas</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1574607383476-f517f562d009?w=600&q=80" alt="Barras de plata" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--silver">Plata</div><h3 class="product-name">Barras de Plata</h3><p class="product-desc">Lingotes de plata de 100g a 1kg, perfectos para diversificar tu portafolio con menor inversión inicial.</p><div class="product-specs"><span>Pureza: 999‰</span><span>100g – 1kg</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?w=600&q=80" alt="Coleccionables" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--collect">Colección</div><h3 class="product-name">Coleccionables</h3><p class="product-desc">Piezas numismáticas de edición limitada, monedas conmemorativas y sets especiales con alto valor.</p><div class="product-specs"><span>Edición Limitada</span><span>Cert. NGC/PCGS</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-        <article class="product-card reveal">
-          <div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=600&q=80" alt="Metales industriales" class="product-img" loading="lazy"/></div>
-          <div class="product-card-body"><div class="product-metal-tag product-metal-tag--industrial">Industrial</div><h3 class="product-name">Metales Industriales</h3><p class="product-desc">Granallas, chapas y formatos especiales de oro y plata para uso industrial y joyería de precisión.</p><div class="product-specs"><span>Alta Pureza</span><span>Formatos a medida</span></div><a href="#contacto" class="product-cta">Ver más</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <div class="wavy-divider wavy-divider--products" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,10 C300,55 600,0 900,35 C1100,58 1300,10 1440,40 L1440,60 L0,60 Z" fill="#080c18"/></svg></div>
-
-  <!-- GALLERY -->
-  <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Colección Visual</span>
-        <h2 class="section-title" id="gallery-title">Nuestra <em class="gold-italic">Colección</em></h2>
-        <div class="section-title-accent" aria-hidden="true"></div>
-        <p class="section-subtitle">Descubre la belleza y valor de nuestros metales preciosos a través de cada pieza única.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-item--tall reveal"><img src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80" alt="Monedas de oro" class="gallery-img" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><span class="gallery-label">Monedas de Oro</span></div></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80" alt="Barras de oro" class="gallery-img" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><span class="gallery-label">Barras de Oro</span></div></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Monedas de plata" class="gallery-img" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><span class="gallery-label">Monedas de Plata</span></div></div>
-        <div class="gallery-item gallery-item--wide reveal"><img src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?w=600&q=80" alt="Coleccionables" class="gallery-img" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><span class="gallery-label">Coleccionables Exclusivos</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="wavy-divider wavy-divider--gallery" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C240,5 480,55 720,20 C960,0 1200,50 1440,15 L1440,60 L0,60 Z" fill="#0a0e1a"/></svg></div>
-
-  <!-- NOSOTROS -->
-  <section class="section about" id="nosotros" aria-labelledby="about-title">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content reveal">
-          <span class="section-tag">Nosotros</span>
-          <h2 class="section-title" id="about-title">Enkorp: su aliado en<br/><em class="gold-italic">metales preciosos</em></h2>
-          <div class="section-title-accent section-title-accent--left" aria-hidden="true"></div>
-          <p class="about-text">Somos una empresa peruana fundada con la misión de democratizar el acceso a la inversión en metales preciosos. Desde Lima, servimos a clientes en todo el país con la más alta ética profesional y transparencia total en cada operación.</p>
-          <p class="about-text">Nuestro equipo de expertos en numismática y mercados de commodities te acompaña en cada etapa de tu inversión, garantizando autenticidad, precio justo y asesoría personalizada.</p>
-          <div class="values-grid">
-            <div class="value-item"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6l4 8 9 1.3-6.5 6.3 1.5 9L20 26l-8 4.6 1.5-9L7 15.3l9-1.3L20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h4 class="value-name">Confianza</h4><p class="value-desc">Más de 15 años construyendo relaciones sólidas con nuestros clientes.</p></div>
-            <div class="value-item"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4 class="value-name">Calidad</h4><p class="value-desc">Solo trabajamos con metales certificados bajo los más estrictos estándares internacionales.</p></div>
-            <div class="value-item"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div><h4 class="value-name">Transparencia</h4><p class="value-desc">Precios claros, sin comisiones ocultas y con total trazabilidad en cada operación.</p></div>
-          </div>
-        </div>
-        <div class="about-visual reveal">
-          <div class="about-img-frame">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80" alt="Sede de Enkorp en Lima" class="about-img" loading="lazy"/>
-            <div class="about-badge"><span class="about-years-num">15+</span><span class="about-years-label">años de<br/>experiencia</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Testimonios</span>
-        <h2 class="section-title" id="testimonials-title">Lo que dicen nuestros<br/><em class="gold-italic">clientes</em></h2>
-        <div class="section-title-accent" aria-hidden="true"></div>
-      </div>
-      <div class="testimonials-grid">
-        <article class="testimonial-card reveal"><div class="stars" aria-label="5 estrellas"><span aria-hidden="true">★★★★★</span></div><blockquote class="testimonial-text">"Llevo tres años invirtiendo con Enkorp y la experiencia ha sido excelente. Los asesores son muy profesionales, los precios competitivos y el proceso completamente transparente. Totalmente recomendados."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true"><span>CR</span></div><div class="author-info"><cite class="author-name">Carlos Ramírez</cite><span class="author-role">Empresario, Lima</span></div></footer></article>
-        <article class="testimonial-card testimonial-card--featured reveal"><div class="stars" aria-label="5 estrellas"><span aria-hidden="true">★★★★★</span></div><blockquote class="testimonial-text">"Comencé a diversificar mi portafolio con barras de oro gracias al asesoramiento de Enkorp. El equipo me explicó todo con claridad y hoy tengo una inversión sólida y segura. Es la empresa más confiable de Lima."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true"><span>MV</span></div><div class="author-info"><cite class="author-name">María Vargas</cite><span class="author-role">Arquitecta, Miraflores</span></div></footer></article>
-        <article class="testimonial-card reveal"><div class="stars" aria-label="5 estrellas"><span aria-hidden="true">★★★★★</span></div><blockquote class="testimonial-text">"Vendí mis monedas de plata con Enkorp y el proceso fue muy rápido y seguro. Me pagaron al precio de mercado, sin descuentos injustificados. Definitivamente volvería a trabajar con ellos."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true"><span>JP</span></div><div class="author-info"><cite class="author-name">Jorge Palomino</cite><span class="author-role">Coleccionista, San Isidro</span></div></footer></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contacto" aria-labelledby="contact-title">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Contacto</span>
-        <h2 class="section-title" id="contact-title">Hablemos sobre tu<br/><em class="gold-italic">inversión</em></h2>
-        <div class="section-title-accent" aria-hidden="true"></div>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-form-wrap reveal">
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group"><label class="form-label" for="nombre">Nombre completo <span aria-hidden="true">*</span></label><input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ej. Juan García" required autocomplete="name"/><span class="form-error" id="nombreError" role="alert"></span></div>
-              <div class="form-group"><label class="form-label" for="email">Correo electrónico <span aria-hidden="true">*</span></label><input class="form-input" type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email"/><span class="form-error" id="emailError" role="alert"></span></div>
-            </div>
-            <div class="form-group"><label class="form-label" for="telefono">Teléfono</label><input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" autocomplete="tel"/></div>
-            <div class="form-group"><label class="form-label" for="mensaje">Mensaje <span aria-hidden="true">*</span></label><textarea class="form-input form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu interés en metales preciosos…" rows="5" required></textarea><span class="form-error" id="mensajeError" role="alert"></span></div>
-            <button type="submit" class="btn-primary btn-submit" id="formSubmit"><span class="btn-text">Enviar Mensaje</span><svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10l14-7-7 14-2-5-5-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
-            <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>✓ ¡Mensaje enviado! Nos pondremos en contacto contigo muy pronto.</p>
-          </form>
-        </div>
-        <div class="contact-info reveal">
-          <div class="contact-info-inner">
-            <h3 class="contact-info-title">Información de Contacto</h3>
-            <ul class="contact-details">
-              <li class="contact-detail"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Dirección</strong><span>Lima, Perú<br/>San Isidro, Lima 27</span></div></li>
-              <li class="contact-detail"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Teléfono</strong><span><a href="tel:+51999000000">+51 999 000 000</a></span></div></li>
-              <li class="contact-detail"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5"/></svg></div><div><strong>Email</strong><span><a href="mailto:contacto@enkorp.pe">contacto@enkorp.pe</a></span></div></li>
-              <li class="contact-detail"><div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><strong>Horario</strong><span>Lun – Vie: 9am – 6pm<br/>Sáb: 9am – 1pm</span></div></li>
-            </ul>
-            <div class="map-placeholder" role="img" aria-label="Ubicación de Enkorp en Lima"><div class="map-inner"><svg viewBox="0 0 200 120" fill="none" class="map-svg"><rect width="200" height="120" fill="#111827" rx="8"/><path d="M10 60 Q50 40 100 55 Q150 70 190 50" stroke="#1e3a5f" stroke-width="8" fill="none" opacity=".6"/><path d="M0 80 Q60 65 120 75 Q160 82 200 70" stroke="#1e3a5f" stroke-width="5" fill="none" opacity=".4"/><line x1="30" y1="0" x2="30" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="80" y1="0" x2="80" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="130" y1="0" x2="130" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="180" y1="0" x2="180" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="30" x2="200" y2="30" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="60" x2="200" y2="60" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><line x1="0" y1="90" x2="200" y2="90" stroke="#1e3a5f" stroke-width="1" opacity=".2"/><circle cx="100" cy="58" r="6" fill="#c9a84c"/><circle cx="100" cy="58" r="3" fill="#0a0e1a"/><line x1="100" y1="64" x2="100" y2="75" stroke="#c9a84c" stroke-width="2"/><circle cx="100" cy="58" r="12" stroke="#c9a84c" stroke-width="1" opacity=".4"/><text x="100" y="95" text-anchor="middle" font-size="9" fill="#c9a84c" opacity=".8" font-family="Inter,sans-serif">Lima, Perú</text></svg><p class="map-label">San Isidro, Lima</p></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer-top"><div class="container"><div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#inicio" class="nav-logo footer-logo"><span class="logo-text">ENK<span class="logo-accent">ORP</span></span><span class="logo-tagline">Metales Preciosos</span></a>
-        <p class="footer-desc">Empresa peruana líder en la compra, venta y asesoría de metales preciosos. Inversión segura, transparente y garantizada.</p>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
-          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg></a>
-          <a href="#" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-        </div>
-      </div>
-      <nav class="footer-nav"><h4 class="footer-nav-title">Navegación</h4><ul class="footer-nav-list"><li><a href="#inicio">Inicio</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#productos">Productos</a></li><li><a href="#galeria">Galería</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul></nav>
-      <nav class="footer-nav"><h4 class="footer-nav-title">Productos</h4><ul class="footer-nav-list"><li><a href="#productos">Monedas de Oro</a></li><li><a href="#productos">Barras de Oro</a></li><li><a href="#productos">Monedas de Plata</a></li><li><a href="#productos">Barras de Plata</a></li><li><a href="#productos">Coleccionables</a></li></ul></nav>
-      <div class="footer-contact"><h4 class="footer-nav-title">Contacto</h4><address class="footer-address"><p>Lima, Perú</p><p><a href="tel:+51999000000">+51 999 000 000</a></p><p><a href="mailto:contacto@enkorp.pe">contacto@enkorp.pe</a></p></address><a href="#contacto" class="btn-primary footer-cta">Contactar Ahora</a></div>
-    </div></div></div>
-    <div class="footer-bottom"><div class="container"><p class="footer-copy">&copy; <span id="footerYear"></span> Enkorp. Todos los derechos reservados.</p><p class="footer-legal">Lima, Perú &bull; Metales Preciosos Certificados</p></div></div>
-  </footer>
-
-  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-
-  <script>
+<script>
 'use strict';
 const qs=(s,r=document)=>r.querySelector(s);
 const qsa=(s,r=document)=>[...r.querySelectorAll(s)];
 const clamp=(v,a,b)=>Math.min(Math.max(v,a),b);
 const lerp=(a,b,t)=>a+(b-a)*t;
-const easeOutCubic=t=>1-Math.pow(1-t,3);
+const eoc=t=>1-Math.pow(1-t,3);
 
+// Product data for modals
+const PRODUCTS={
+  'Gold Coins':{img:'https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80',tag:'Gold',cls:'tag-gold',desc:"Our gold coin selection includes the world's most prestigious sovereign and bullion coins. From the American Eagle to the Canadian Maple Leaf, South African Krugerrand and Austrian Philharmonic — each coin comes with full certification and provenance documentation.",specs:[['Purity','22k – 24k (91.67% – 99.99%)'],['Weight Options','1/10 oz, 1/4 oz, 1/2 oz, 1 oz'],['Certification','NGC / PCGS / Sovereign Mint'],['Delivery','Insured & tracked shipping']]},
+  'Gold Bars':{img:'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80',tag:'Gold',cls:'tag-gold',desc:'Investment-grade gold bars from the world\'s most respected refineries including PAMP Suisse, Valcambi and Argor-Heraeus. Each bar features a unique serial number, assay certificate and tamper-evident packaging for maximum security.',specs:[['Purity','999.9‰ (24k)'],['Weight Range','1g, 5g, 10g, 1oz, 100g, 250g, 500g, 1kg'],['Certification','LBMA certified refineries'],['Storage','Secure vault storage available']]},
+  'Silver Coins':{img:'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',tag:'Silver',cls:'tag-silver',desc:'Premium silver bullion coins and limited edition collectibles. Our silver coin portfolio spans classic 1 oz rounds to commemorative issues from major world mints. Silver offers an accessible entry point for new precious metals investors.',specs:[['Purity','999‰ (99.9% fine silver)'],['Weight Options','1 oz, 2 oz, 5 oz, 10 oz'],['Popular Series','Silver Eagle, Maple Leaf, Britannia'],['Certification','Sovereign mint certification']]},
+  'Silver Bars':{img:'https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80&fit=crop&crop=left',tag:'Silver',cls:'tag-silver',desc:'Silver bars are one of the most cost-efficient ways to invest in precious metals. With lower premiums over spot than coins, they are ideal for building significant silver holdings. Available from leading refineries with full assay documentation.',specs:[['Purity','999‰ (99.9% fine silver)'],['Weight Range','100g, 250g, 500g, 1kg, 5kg'],['Refinery','PAMP, Valcambi, Engelhard'],['Premium','Low premium over spot price']]},
+  'Collectibles':{img:'https://images.unsplash.com/photo-1575505781330-b6d3e6f25e0a?w=800&q=80',tag:'Collectibles',cls:'tag-collect',desc:'Numismatic treasures for the discerning collector. Our collectibles division specializes in rare coins, commemorative issues and limited-edition sets certified by NGC and PCGS. These pieces combine precious metal value with significant numismatic premium.',specs:[['Certification','NGC / PCGS graded'],['Types','Proof, BU, Commemorative'],['Editions','Limited mintage worldwide'],['Value','Numismatic + intrinsic metal value']]},
+  'Industrial Metals':{img:'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80',tag:'Industrial',cls:'tag-industrial',desc:'High-purity gold and silver in specialized industrial formats for manufacturing, electronics, jewelry production and precision engineering. We supply granules, sheets, wire and custom-shaped materials to businesses across Peru.',specs:[['Metals Available','Gold, Silver, Platinum'],['Formats','Granules, sheets, wire, rods'],['Purity','Custom specifications available'],['MOQ','Contact us for minimum orders']]}
+};
+
+// Navbar
 function initNavbar(){
-  const navbar=qs('#navbar'),navLinks=qsa('.nav-link'),sections=qsa('section[id]');
-  if(!navbar)return;
+  const nb=qs('#navbar'),links=qsa('.nav-link'),secs=qsa('section[id]');
+  if(!nb)return;
   function onScroll(){
     const y=window.scrollY;
-    navbar.classList.toggle('scrolled',y>60);
-    let cur='';
-    sections.forEach(s=>{const top=s.offsetTop-100;if(y>=top&&y<top+s.offsetHeight)cur=s.id;});
-    navLinks.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
+    nb.classList.toggle('scrolled',y>60);
+    let cur='';secs.forEach(s=>{const t=s.offsetTop-100;if(y>=t&&y<t+s.offsetHeight)cur=s.id;});
+    links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
   }
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 }
 
+// Hamburger
 function initHamburger(){
   const ham=qs('#hamburger'),menu=qs('#navMenu');
   if(!ham||!menu)return;
-  function toggle(open){
-    const o=open!==undefined?open:!menu.classList.contains('open');
-    ham.classList.toggle('active',o);menu.classList.toggle('open',o);
-    ham.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';
-  }
+  function toggle(o){const open=o!==undefined?o:!menu.classList.contains('open');ham.classList.toggle('active',open);menu.classList.toggle('open',open);ham.setAttribute('aria-expanded',open);document.body.style.overflow=open?'hidden':'';}
   ham.addEventListener('click',()=>toggle());
   qsa('.nav-link',menu).forEach(l=>l.addEventListener('click',()=>toggle(false)));
   document.addEventListener('click',e=>{if(menu.classList.contains('open')&&!menu.contains(e.target)&&!ham.contains(e.target))toggle(false);});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('open')){toggle(false);ham.focus();}});
 }
 
-function initSmoothScroll(){
+// Smooth scroll
+function initScroll(){
   qsa('a[href^="#"]').forEach(a=>{
     a.addEventListener('click',e=>{
       const id=a.getAttribute('href');if(id==='#')return;
       const t=qs(id);if(!t)return;e.preventDefault();
-      const nh=qs('#navbar')?.offsetHeight??80;
-      window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-nh,behavior:'smooth'});
+      window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-(qs('#navbar')?.offsetHeight??80),behavior:'smooth'});
     });
   });
 }
 
+// Reveal animations
 function initReveal(){
   if(!('IntersectionObserver' in window)){qsa('.reveal').forEach(e=>e.classList.add('visible'));return;}
   const obs=new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
       if(entry.isIntersecting){
-        const sibs=qsa('.reveal',entry.target.closest('.services-grid,.products-grid,.testimonials-grid,.stats-grid,.values-grid')||document).filter(s=>!s.classList.contains('visible'));
+        const parent=entry.target.closest('.services-grid,.products-grid,.testimonials-grid,.stats-grid,.values-grid');
+        const sibs=parent?qsa('.reveal',parent).filter(s=>!s.classList.contains('visible')):[];
         const d=sibs.indexOf(entry.target);
         setTimeout(()=>entry.target.classList.add('visible'),d>=0?d*80:0);
         obs.unobserve(entry.target);
@@ -647,39 +669,71 @@ function initReveal(){
   qsa('.reveal').forEach(e=>obs.observe(e));
 }
 
+// Counters
 function initCounters(){
   const els=qsa('[data-target]');if(!els.length)return;
-  const fmt=n=>n>=1000?n.toLocaleString('es-PE'):String(n);
+  const fmt=n=>n>=1000?n.toLocaleString('en-US'):String(n);
   function animate(el){
-    const target=parseInt(el.dataset.target),suffix=el.dataset.suffix??'',dur=1800;
-    let start=null;
-    function step(ts){if(!start)start=ts;const p=Math.min((ts-start)/dur,1);el.textContent=fmt(Math.round(lerp(0,target,easeOutCubic(p))))+suffix;if(p<1)requestAnimationFrame(step);else el.textContent=fmt(target)+suffix;}
-    requestAnimationFrame(step);
+    const target=parseInt(el.dataset.target),sfx=el.dataset.suffix??'',dur=1800;let s=null;
+    (function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/dur,1);el.textContent=fmt(Math.round(lerp(0,target,eoc(p))))+sfx;if(p<1)requestAnimationFrame(step);else el.textContent=fmt(target)+sfx;})(performance.now());
   }
   if(!('IntersectionObserver' in window)){els.forEach(animate);return;}
-  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){animate(e.target);obs.unobserve(e.target);}});},{threshold:0.4});
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){animate(e.target);obs.unobserve(e.target);}});},{threshold:0.4});
   els.forEach(e=>obs.observe(e));
 }
 
+// Particles
 function initParticles(){
-  const c=qs('#heroParticles');if(!c)return;
-  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  function spawn(){
-    const p=document.createElement('span');p.className='particle';
-    const s=Math.random()*3+1;
-    p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:-10px;animation-duration:${Math.random()*12+8}s;animation-delay:${Math.random()*8}s;`;
-    c.appendChild(p);p.addEventListener('animationend',()=>{p.remove();spawn();},{once:true});
-  }
+  const c=qs('#heroParticles');if(!c||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  function spawn(){const p=document.createElement('span');p.className='particle';p.style.cssText=`width:${Math.random()*3+1}px;height:${Math.random()*3+1}px;left:${Math.random()*100}%;bottom:-10px;animation-duration:${Math.random()*12+8}s;animation-delay:${Math.random()*8}s;`;c.appendChild(p);p.addEventListener('animationend',()=>{p.remove();spawn();},{once:true});}
   for(let i=0;i<40;i++)spawn();
 }
 
+// Product Modals
+function initModals(){
+  const modal=qs('#productModal'),img=qs('#modalImg'),tag=qs('#modalTag'),title=qs('#modalTitle'),desc=qs('#modalDesc'),specs=qs('#modalSpecs'),closeBtn=qs('#modalClose'),ctaBtn=qs('#modalCta');
+
+  function open(name){
+    const p=PRODUCTS[name];if(!p)return;
+    img.src=p.img;img.alt=name;
+    tag.textContent=p.tag;tag.className='prod-tag '+p.cls;
+    title.textContent=name;
+    desc.textContent=p.desc;
+    specs.innerHTML=p.specs.map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+    modal.hidden=false;
+    document.body.style.overflow='hidden';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>modal.classList.add('open')));
+  }
+
+  function close(){
+    modal.classList.remove('open');
+    setTimeout(()=>{modal.hidden=true;document.body.style.overflow='';},300);
+  }
+
+  qsa('.prod-cta').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const name=btn.closest('.product-card')?.querySelector('.prod-name')?.textContent;
+      if(name)open(name);
+    });
+  });
+
+  closeBtn.addEventListener('click',close);
+  modal.addEventListener('click',e=>{if(e.target===modal)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close();});
+  ctaBtn.addEventListener('click',()=>{
+    close();
+    setTimeout(()=>{const c=qs('#contact');if(c)window.scrollTo({top:c.getBoundingClientRect().top+window.scrollY-(qs('#navbar')?.offsetHeight??80),behavior:'smooth'});},350);
+  });
+}
+
+// Contact form
 function initForm(){
   const form=qs('#contactForm');if(!form)return;
   const btn=qs('#formSubmit',form),success=qs('#formSuccess',form);
   const fields={
-    nombre:{el:qs('#nombre',form),err:qs('#nombreError',form),v:v=>v.trim().length>=2?'':'Por favor ingresa tu nombre completo.'},
-    email:{el:qs('#email',form),err:qs('#emailError',form),v:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())?'':'Ingresa un correo electrónico válido.'},
-    mensaje:{el:qs('#mensaje',form),err:qs('#mensajeError',form),v:v=>v.trim().length>=10?'':'El mensaje debe tener al menos 10 caracteres.'},
+    nombre:{el:qs('#nombre'),err:qs('#nombreError'),v:v=>v.trim().length>=2?'':'Please enter your full name.'},
+    email:{el:qs('#email'),err:qs('#emailError'),v:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())?'':'Enter a valid email address.'},
+    mensaje:{el:qs('#mensaje'),err:qs('#mensajeError'),v:v=>v.trim().length>=10?'':'Message must be at least 10 characters.'},
   };
   function show(f,msg){f.el.classList.toggle('error',!!msg);f.el.classList.toggle('success',!msg&&f.el.value.trim()!=='');f.err.textContent=msg;}
   Object.values(fields).forEach(f=>{
@@ -690,52 +744,51 @@ function initForm(){
     e.preventDefault();let valid=true;
     Object.values(fields).forEach(f=>{const err=f.v(f.el.value);show(f,err);if(err)valid=false;});
     if(!valid){Object.values(fields).find(f=>f.el.classList.contains('error'))?.el.focus();return;}
-    btn.disabled=true;btn.querySelector('.btn-text').textContent='Enviando…';
+    btn.disabled=true;btn.querySelector('.btn-text').textContent='Sending…';
     setTimeout(()=>{
       form.reset();Object.values(fields).forEach(f=>{f.el.classList.remove('success','error');f.err.textContent='';});
-      success.hidden=false;btn.disabled=false;btn.querySelector('.btn-text').textContent='Enviar Mensaje';
+      success.hidden=false;btn.disabled=false;btn.querySelector('.btn-text').textContent='Send Message';
       setTimeout(()=>success.hidden=true,6000);
     },1200);
   });
 }
 
+// Back to top
 function initBackToTop(){
   const btn=qs('#backToTop');if(!btn)return;
   window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>500),{passive:true});
   btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 }
 
+// Mobile overlay
 function initOverlay(){
-  const overlay=document.createElement('div');
-  overlay.setAttribute('aria-hidden','true');
-  overlay.style.cssText='position:fixed;inset:0;z-index:998;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .35s;';
-  document.body.appendChild(overlay);
+  const ov=document.createElement('div');
+  ov.style.cssText='position:fixed;inset:0;z-index:998;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .35s;';
+  document.body.appendChild(ov);
   const menu=qs('#navMenu');if(!menu)return;
-  new MutationObserver(()=>{const o=menu.classList.contains('open');overlay.style.opacity=o?'1':'0';overlay.style.pointerEvents=o?'auto':'none';}).observe(menu,{attributes:true,attributeFilter:['class']});
-  overlay.addEventListener('click',()=>{menu.classList.remove('open');qs('#hamburger')?.classList.remove('active');qs('#hamburger')?.setAttribute('aria-expanded','false');document.body.style.overflow='';});
+  new MutationObserver(()=>{const o=menu.classList.contains('open');ov.style.opacity=o?'1':'0';ov.style.pointerEvents=o?'auto':'none';}).observe(menu,{attributes:true,attributeFilter:['class']});
+  ov.addEventListener('click',()=>{menu.classList.remove('open');qs('#hamburger')?.classList.remove('active');qs('#hamburger')?.setAttribute('aria-expanded','false');document.body.style.overflow='';});
 }
 
+// Card tilt
 function initTilt(){
-  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  if(window.matchMedia('(hover:none)').matches)return;
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches||window.matchMedia('(hover:none)').matches)return;
   qsa('.product-card,.service-card').forEach(card=>{
-    card.addEventListener('mousemove',e=>{
-      const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-      card.style.transform=`perspective(800px) rotateX(${clamp(y*-10,-6,6)}deg) rotateY(${clamp(x*10,-6,6)}deg) translateY(-4px)`;
-    });
+    card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateX(${clamp(y*-10,-6,6)}deg) rotateY(${clamp(x*10,-6,6)}deg) translateY(-4px)`;});
     card.addEventListener('mouseleave',()=>card.style.transform='');
   });
 }
 
 function init(){
   const yr=qs('#footerYear');if(yr)yr.textContent=new Date().getFullYear();
-  initNavbar();initHamburger();initOverlay();initSmoothScroll();
-  initReveal();initCounters();initParticles();initForm();initBackToTop();initTilt();
-  const feat=qs('.testimonial-card--featured');
+  initNavbar();initHamburger();initOverlay();initScroll();
+  initReveal();initCounters();initParticles();
+  initModals();initForm();initBackToTop();initTilt();
+  const feat=qs('.tcard--featured');
   if(feat){let b=false;setInterval(()=>{b=!b;feat.style.boxShadow=b?'0 0 40px rgba(201,168,76,.15),0 8px 40px rgba(0,0,0,.45)':'none';},3000);}
 }
 
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
-  </script>
+</script>
 </body>
 </html>
