@@ -164,7 +164,8 @@ img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}ul{l
 .prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:80px;}
 .prod-card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:var(--t);}
 .prod-card:hover{border-color:var(--border-mid);transform:translateY(-6px);box-shadow:var(--sc);}
-.prod-img-wrap{height:320px;overflow:hidden;background:linear-gradient(135deg,#111827,#1a2035);}
+.prod-img-wrap{height:320px;overflow:hidden;background:linear-gradient(135deg,#1a160a,#2a1f08);position:relative;}
+.prod-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(10,8,2,.45));pointer-events:none;z-index:1;}
 .prod-img{width:100%;height:100%;object-fit:cover;max-width:none;transition:transform .5s ease;}
 .prod-card:hover .prod-img{transform:scale(1.06);}
 .prod-body{padding:28px 30px 34px;}
@@ -356,7 +357,7 @@ img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}ul{l
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920&q=80" alt="Gold bars — conscious gold trading" loading="eager" fetchpriority="high"/>
+    <img class="hero-img" src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=1920&q=80&fit=crop&crop=entropy" alt="Gold bars — conscious gold trading" loading="eager" fetchpriority="high" onerror="this.style.opacity='0'"/>
     <div class="hero-ov"></div>
     <div class="hero-particles" id="heroParticles"></div>
   </div>
@@ -436,7 +437,7 @@ img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}ul{l
       </div>
       <div class="reveal">
         <div class="og-img-wrap">
-          <img class="og-img" src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80" alt="Fine gold coins — 99.9 purity" loading="lazy"/>
+          <img class="og-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fit=crop&crop=entropy" alt="Fine gold coins — 99.9 purity" loading="lazy" onerror="this.style.opacity='0'"/>
         </div>
       </div>
     </div>
@@ -541,7 +542,7 @@ img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}ul{l
     <div class="prod-grid">
       <article class="prod-card reveal">
         <div class="prod-img-wrap">
-          <img class="prod-img" src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80" alt="99.9 Fine Gold Coins — 1 oz" loading="lazy"/>
+          <img class="prod-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fit=crop&crop=entropy" alt="99.9 Fine Gold Coins — 1 oz" loading="lazy" onerror="this.style.opacity='0'"/>
         </div>
         <div class="prod-body">
           <span class="prod-label">Gold · 99.9 Fine</span>
@@ -556,7 +557,7 @@ img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}ul{l
       </article>
       <article class="prod-card reveal">
         <div class="prod-img-wrap">
-          <img class="prod-img" src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80" alt="99.9 Certified Gold Bars — 100g to 500g" loading="lazy"/>
+          <img class="prod-img" src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=800&q=80&fit=crop&crop=entropy" alt="99.9 Certified Gold Bars — 100g to 500g" loading="lazy" onerror="this.style.opacity='0'"/>
         </div>
         <div class="prod-body">
           <span class="prod-label">Gold · 99.9 Certified</span>
@@ -820,14 +821,14 @@ const lerp=(a,b,t)=>a+(b-a)*t;
 // Product modal data
 const PRODUCTS={
   coins:{
-    img:'https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80',
+    img:'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fit=crop&crop=entropy',
     tag:'Enorah Gold · 99.9 Fine',
     title:'99.9 Fine Gold Coins',
     desc:"Standard 1 oz troy pieces internationally recognized for their purity, liquidity and enduring value. Ideal for personal ownership, prestigious gifting and long-term wealth preservation. Each coin is consciously sourced through Enkorp's traceable supply chain from ancestral mining communities in southern Peru.",
     specs:[['Weight','1 oz troy (31.1g)'],['Purity','99.9% Fine Gold'],['Origin','Southern Peru'],['Supply Chain','Fully traceable'],['Documentation','Complete provenance cert.'],['Use','Investment & gifting']]
   },
   bars:{
-    img:'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80',
+    img:'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=800&q=80&fit=crop&crop=entropy',
     tag:'Enorah Gold · 99.9 Certified',
     title:'99.9 Certified Gold Bars',
     desc:'Available in 100g, 250g and 500g formats, produced under strict ethical and compliance standards. Each bar comes with complete documentation and guaranteed traceability — from the ancestral mining communities in Peru all the way to your hands.',
