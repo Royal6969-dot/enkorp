@@ -1,0 +1,372 @@
+ENKORP WEBSITE CONTENT EXTRACTION
+==================================
+Source: b50e860e-Enkorpreal.html (1032 lines)
+Extracted: All visible text content from the real Enkorp website
+
+==============================
+SITE TITLE
+==============================
+Enkorp
+
+==============================
+NAVIGATION MENU ITEMS
+==============================
+Language toggle: esp | eng
+- About
+- Coins & Bars
+- Contact
+- Investment Opportunities
+- Gold supply
+- Impact
+
+==============================
+HERO / HOMEPAGE TAGLINE
+==============================
+"conscious gold trading"
+(displayed as three separate animated words: conscious / gold / trading)
+
+Sub-headline:
+"We create a truly virtuous circle of opportunities around the ancestral gold business for the communities, our partners and clients."
+
+Supporting line:
+"Connecting over 2,000-year-old ancestral gold craftsmanship in southern Peru with global markets"
+
+Button: "Explore Impact"
+
+==============================
+ABOUT / MISSION STATEMENT
+==============================
+"Enkorp, conscious gold trading."
+"Anchored in rigor and integrity, we connect an ancient gold craft with global markets."
+
+==============================
+OUR GOLD SECTION
+==============================
+Heading: "Our gold"
+Subheading: "Sourced and managed through a responsible, fully traceable model from origin onward."
+
+Four value tags/labels:
+- Impactful
+- Ethical
+- Traceable
+- Trustworthy
+
+Four bullet points:
+- 100% of production documented from source to custody
+- Mercury-free smelting and refining operations and processes
+- Auditable records maintained for every transaction
+- Supporting registered mining communities since 2019
+
+==============================
+TRACK RECORD / STATISTICS SECTION
+==============================
+Heading: "Track Record"
+Subheading: "World class execution built on principles, demonstrated through measurable results."
+
+Statistics:
+- $58.9M+   → in CONSCIOUS gold exports
+- 0.52+     → tons commercialized
+- 9,650+    → compliant operations
+
+==============================
+ARTISANS / COMMUNITY SECTION
+==============================
+Heading: "Artisans as True Partners"
+Body: "We formally integrate miners into an ethical and transparent supply chain. Enkorp ensures fair income and safe working conditions, empowering communities."
+
+"Through our partner company Singita, we:"
+- Formalize ancestral miners
+- Uplift local communities
+- Integrate them into the tax system
+
+==============================
+ENVIRONMENTAL RESPONSIBILITY SECTION
+==============================
+Heading: "Environmental responsibility"
+Body: "We operate under mercury-free production processes and promote environmentally sustainable methods that protect land, water, and biodiversity across all our sourcing regions."
+
+==============================
+CONSCIOUS GOLD / STANDARDS SECTION
+==============================
+Heading: "The New Standard of Conscious Gold"
+Body: "At Enkorp, conscious gold means managing every step of the process with responsibility, transparency and integrity."
+
+Sub-section 1:
+Title: "Compliance by the gram"
+Body: "Every gram is documented and verified from its source, ensuring a transparent and responsible supply chain."
+
+Sub-section 2:
+Title: "GOLD WITH INTEGRITY"
+Body: "Ethical sourcing made visible. Gold whose journey can be verified, trusted, and proudly shared with the world."
+
+Sub-section 3:
+Title: "ENVIRONMENTAL STEWARDSHIP"
+Body: "Responsible practices, verified purity, safe and environmental protection."
+
+==============================
+CERTIFICATIONS SECTION
+==============================
+Heading: "Certifications"
+Body: "We are currently in the process of obtaining internationally recognized certifications to strengthen and elevate our compliance standards."
+
+Certifications listed:
+- Entrepreneurs for Integrity – Anti-Corruption Certification (Peru)
+- ISO 37001 – Anti-Bribery Management System
+- ISO 37301 – Compliance Management System
+- Business Alliance for Secure Commerce (BASC)
+- Authorized Economic Operator (AEO – Customs)
+
+==============================
+WORLDWIDE TRUST SECTION
+==============================
+Heading: "Worldwide Trust"
+Body: "Trust is built through long-term partnerships, rigorous standards and shared accountability."
+
+==============================
+COINS & BARS PAGE
+==============================
+Page heading: "Coins & Bars Acquisition"
+Subtitle: "Physical gold for liquidity and wealth preservation, meeting the highest global standards."
+Tag/Label: "Certified gold coins and bars, consciously sourced in Peru"
+
+Button: "Contact Us"
+
+Product 1 — Gold Coins:
+Title: "99.9 Fine Gold coins"
+Body: "Standard 1 oz pieces, internationally recognized for their purity, liquidity, and enduring value."
+       "Ideal for personal ownership, prestigious gifting, and wealth preservation purposes."
+
+Product 2 — Gold Bars:
+Title: "99.9 Certified Gold bars"
+Body: "Available in 100 grams, 250 grams, and 500 grams formats, produced under strict ethical and compliance standards."
+       "Each bar comes with complete documentation and guaranteed traceability."
+
+==============================
+ENORAH GOLD — PRODUCT BRAND (sub-brand)
+==============================
+Brand name: "Enorah Gold"
+(Referenced via the "Coins & Bars" nav item as a sub-page/product)
+
+Four storytelling sections about Enorah Gold:
+
+1. "Ancestral Origin"
+   Lead: "Born from a lineage of millennia-old rituals."
+   Body: "Enorah Gold is gathered by the women who have long been the quiet guardians of the Andean earth. Their craft is an inheritance, passed hand to hand, heart to heart, preserving a sacred way of working with gold that has endured for thousands of years."
+
+2. "Violence-Free Extraction"
+   Lead: "It is harvested with reverence."
+   Body: "Here, gold is not torn from the earth. free from violence, destruction, or exploitation. No forced labor. No invasive mining. No wounds left upon the land, only the continuity of a gentle, ancestral practice."
+
+3. "Documented Purity"
+   Lead: "Every gram carries a verifiable lineage."
+   Body: "Certified compliance, full traceability, and environmental stewardship form the unbroken chain that defines its integrity. Enorah Gold is purity not just of material, but of origin."
+
+4. "Cultural Value"
+   Lead: "Each piece embodies the living soul of the Andes."
+   Body: "A cultural continuum where craftsmanship, ritual, and nature meet. It is luxury intertwined with heritage, connecting today's world with the timeless stories of those who came before."
+
+==============================
+PARTNER COMPANY
+==============================
+"Through our partner company Singita, we:"
+(Singita is Enkorp's partner company for community formalization)
+
+==============================
+PAGES / SITE STRUCTURE
+==============================
+Pages identified (from site metadata):
+- Home          → /home/
+- About         → /about/
+- Investment Opportunities → /investment/
+- Contact       → /contact/
+- Coins & Bars  → /5/
+- Impact        → /11/
+- Gold Supply   → /7/
+- Terms & Conditions → /15/
+- Privacy Policy     → /17/
+- Ethics Channel     → /linea-etica/
+- Spanish version    → /2/
+
+==============================
+BUTTON TEXT
+==============================
+- "Explore Impact"
+- "Contact Us"
+- "In the Woods" (appears to be a video/media link label)
+- "Close" (modal close button)
+- "esp" / "eng" (language toggle buttons)
+
+==============================
+FOOTER CONTENT
+==============================
+Logo: Enkorp®
+
+Company column:
+- About
+- Terms & Conditions
+- Privacy Policy
+- Ethics Channel
+
+Community column:
+- Coins & Bars
+- Impact
+- Gold Supply
+- Investment Opportunities
+- Contact
+
+Social column:
+- Subscribe to: Youtube, Instagram, LinkedIn
+(All social links currently point to: https://www.youtube.com/channel/ucz3ylsb-jum76cs1nsfyclw)
+
+Copyright: "All rights reserved. 2026."
+
+==============================
+CONTACT INFORMATION
+==============================
+No direct contact details (address, phone, email, hours) are embedded as visible text
+in this HTML snapshot. The Contact page is a separate page (/contact/) not rendered
+in this static HTML export. No physical address, phone number, or email address
+was found in the extracted content.
+
+==============================
+SOCIAL MEDIA LINKS
+==============================
+- YouTube: https://www.youtube.com/channel/ucz3ylsb-jum76cs1nsfyclw
+- Instagram: (linked but URL same as YouTube — may need updating)
+- LinkedIn: (linked but URL same as YouTube — may need updating)
+
+==============================
+WEBSITE URL
+==============================
+https://enkorp.com.pe/
+
+==============================
+LANGUAGE
+==============================
+Bilingual site: English (eng) and Spanish (esp)
+URL pattern for Spanish: https://enkorp.com.pe/2/
+
+==============================
+BRAND/IDENTITY NOTES
+==============================
+- Brand name: Enkorp (stylized with ® mark)
+- Sub-brand for product line: Enorah Gold
+- Brand philosophy: "conscious gold trading"
+- Origin: Southern Peru, ancestral/artisanal gold mining communities
+- Key differentiator: Mercury-free, traceable, ethical supply chain
+- Community partner: Singita (for formalizing artisanal miners)
+- Operating since: Supporting registered mining communities since 2019
+- Gold standard: 99.9 fine (coins) / 99.9 certified (bars)
+- Website built on: Readymag platform
+
+==============================
+CERTIFICATION LOGOS / PARTNER LOGOS
+(visible in scrolling ticker on homepage)
+==============================
+Multiple partner/certification logos appear in an animated scrolling strip.
+These are image files (PNG/SVG) without alt text — brand names not extractable
+from this HTML. The LATAM logo (LATAM airlines or similar) and several other
+organization logos appear as SVG/PNG images in the ticker.
+
+==============================
+ALL EXTRACTED TEXT (DEDUPLICATED MASTER LIST)
+==============================
+esp
+eng
+About
+coins & bars
+Contact
+Investment Opportunities
+Gold supply
+impact
+Our gold
+Sourced and managed through a responsible, fully traceable model from origin onward.
+Impactful
+Ethical
+Traceable
+Trustworthy
+100% of production documented from source to custody
+Mercury-free smelting and refining operations and processes
+Auditable records maintained for every transaction
+Supporting registered mining communities since 2019
+Track Record
+World class execution built on principles, demonstrated through measurable results.
+$58.9M+
+0.52+
+9,650+
+in CONSCIOUS gold exports
+tons commercialized
+compliant operations
+Artisans as True Partners
+We formally integrate miners into an ethical and transparent supply chain. Enkorp ensures fair income and safe working conditions, empowering communities.
+Through our partner company Singita, we:
+Formalize ancestral miners
+Uplift local communities
+Integrate them into the tax system
+Environmental responsibility
+We operate under mercury-free production processes and promote environmentally sustainable methods that protect land, water, and biodiversity across all our sourcing regions.
+The New Standard of Conscious Gold
+At Enkorp, conscious gold means managing every step of the process with responsibility, transparency and integrity.
+Compliance by the gram
+Every gram is documented and verified from its source, ensuring a transparent and responsible supply chain.
+GOLD WITH INTEGRITY
+Ethical sourcing made visible. Gold whose journey can be verified, trusted, and proudly shared with the world.
+ENVIRONMENTAL STEWARDSHIP
+Responsible practices, verified purity, safe and environmental protection.
+Certifications
+We are currently in the process of obtaining internationally recognized certifications to strengthen and elevate our compliance standards.
+Entrepreneurs for Integrity – Anti-Corruption Certification (Peru)
+ISO 37001 – Anti-Bribery Management System
+ISO 37301 – Compliance Management System
+Business Alliance for Secure Commerce (BASC)
+Authorized Economic Operator (AEO – Customs)
+conscious gold trading
+We create a truly virtuous circle of opportunities around the ancestral gold business for the communities, our partners and clients.
+Connecting over 2,000-year-old ancestral gold craftsmanship in southern Peru with global markets
+Explore Impact
+Worldwide Trust
+Trust is built through long-term partnerships, rigorous standards and shared accountability.
+Enkorp®
+Company
+About
+Terms & Conditions
+Privacy Policy
+Ethics Channel
+Community
+Coins & Bars
+Impact
+Gold Supply
+Investment Opportunities
+Contact
+Subscribe to
+Youtube
+Instagram
+LinkedIn
+All rights reserved. 2026.
+Enkorp, conscious gold trading.
+Anchored in rigor and integrity, we connect an ancient gold craft with global markets.
+In the Woods
+Enorah Gold
+Coins & Bars Acquisition
+Physical gold for liquidity and wealth preservation, meeting the highest global standards.
+Certified gold coins and bars, consciously sourced in Peru
+Contact Us
+99.9 Fine Gold coins
+99.9 Certified Gold bars
+Standard 1 oz pieces, internationally recognized for their purity, liquidity, and enduring value.
+Ideal for personal ownership, prestigious gifting, and wealth preservation purposes.
+Available in 100 grams, 250 grams, and 500 grams formats, produced under strict ethical and compliance standards.
+Each bar comes with complete documentation and guaranteed traceability.
+Ancestral Origin
+Born from a lineage of millennia-old rituals.
+Enorah Gold is gathered by the women who have long been the quiet guardians of the Andean earth. Their craft is an inheritance, passed hand to hand, heart to heart, preserving a sacred way of working with gold that has endured for thousands of years.
+Violence-Free Extraction
+It is harvested with reverence.
+Here, gold is not torn from the earth. free from violence, destruction, or exploitation. No forced labor. No invasive mining. No wounds left upon the land, only the continuity of a gentle, ancestral practice.
+Documented Purity
+Every gram carries a verifiable lineage.
+Certified compliance, full traceability, and environmental stewardship form the unbroken chain that defines its integrity. Enorah Gold is purity not just of material, but of origin.
+Cultural Value
+Each piece embodies the living soul of the Andes.
+A cultural continuum where craftsmanship, ritual, and nature meet. It is luxury intertwined with heritage, connecting today's world with the timeless stories of those who came before.
+Close
