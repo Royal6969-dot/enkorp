@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enkorp – Empresa peruana especializada en metales preciosos: monedas y barras de oro y plata. Inversión segura, garantizada y transparente." />
+  <title>Enkorp | Metales Preciosos – Oro y Plata en Perú</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="Enkorp inicio">
+        <span class="logo-text">ENK<span class="logo-accent">ORP</span></span>
+        <span class="logo-tagline">Metales Preciosos</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="nav-cta btn-primary">Contáctanos</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="inicio" role="banner">
+    <div class="hero-bg">
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up delay-1">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        Empresa Peruana de Confianza
+        <span class="eyebrow-line" aria-hidden="true"></span>
+      </p>
+      <h1 class="hero-title fade-up delay-2">
+        Inversión en<br />
+        <em class="gold-italic">Metales Preciosos</em>
+      </h1>
+      <p class="hero-subtitle fade-up delay-3">
+        Oro y plata de calidad certificada para inversores que exigen lo mejor.<br class="br-desktop" />
+        Transparencia, autenticidad y respaldo experto en cada transacción.
+      </p>
+      <div class="hero-actions fade-up delay-4">
+        <a href="#productos" class="btn-primary btn-large">
+          Conoce Nuestros Productos
+          <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#nosotros" class="btn-ghost btn-large">Sobre Enkorp</a>
+      </div>
+    </div>
+
+    <div class="hero-shimmer" aria-hidden="true"></div>
+
+    <a href="#estadisticas" class="hero-scroll-cue" aria-label="Desplázate hacia abajo">
+      <span class="scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════ STATS BAR ═══════════════════════════ -->
+  <section class="stats-bar" id="estadisticas" aria-label="Estadísticas de la empresa">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="15" data-suffix="+">0</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="10000" data-suffix="+">0</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="100" data-suffix="%">0</span>
+          <span class="stat-label">Garantía de Autenticidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+  <section class="section services" id="servicios" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2 class="section-title" id="services-title">
+          Todo lo que necesitas para<br /><em class="gold-italic">invertir con seguridad</em>
+        </h2>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <article class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+              <path d="M20 36l6-8 6 6 6-10 6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 44h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="32" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Compra de Metales</h3>
+          <p class="service-desc">
+            Adquiere monedas y barras de oro y plata con precios competitivos y certificados de autenticidad internacionales. Inversión respaldada desde el primer día.
+          </p>
+          <a href="#contacto" class="service-link">
+            Saber más
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card service-card--featured reveal">
+          <div class="service-badge" aria-label="Servicio destacado">Popular</div>
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+              <path d="M24 20h16l-4 8H28l-4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M24 28l-4 16h24l-4-16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M28 28v16M36 28v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Venta de Metales</h3>
+          <p class="service-desc">
+            Vende tus metales al mejor precio del mercado. Evaluación transparente, pago inmediato y proceso seguro sin intermediarios ni costos ocultos.
+          </p>
+          <a href="#contacto" class="service-link">
+            Saber más
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+              <path d="M22 42V28M32 42V22M42 42V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="22" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="32" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="42" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Asesoría de Inversión</h3>
+          <p class="service-desc">
+            Nuestros expertos te guían para construir un portafolio diversificado en metales preciosos, adaptado a tus objetivos financieros y perfil de riesgo.
+          </p>
+          <a href="#contacto" class="service-link">
+            Saber más
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PRODUCTS ═══════════════════════════ -->
+  <section class="section products" id="productos" aria-labelledby="products-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Catálogo</span>
+        <h2 class="section-title" id="products-title">
+          Nuestros <em class="gold-italic">Productos</em>
+        </h2>
+        <div class="gold-divider" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Piezas certificadas con los más altos estándares de pureza y calidad, disponibles para entrega inmediata.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Gold Coins -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="32" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="40" cy="40" r="26" stroke="currentColor" stroke-width="1" opacity=".5"/>
+              <text x="40" y="36" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif" font-weight="bold">Au</text>
+              <text x="40" y="52" text-anchor="middle" font-size="8" fill="currentColor" opacity=".7">999.9</text>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--gold">Oro</div>
+          <h3 class="product-name">Monedas de Oro</h3>
+          <p class="product-desc">Monedas soberanas y bullion de alta pureza: American Eagle, Maple Leaf, Krugerrand y más.</p>
+          <div class="product-specs">
+            <span>Pureza: 22–24k</span>
+            <span>Certificadas</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+        <!-- Gold Bars -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <rect x="12" y="26" width="56" height="34" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="20" y="20" width="40" height="10" rx="2" stroke="currentColor" stroke-width="1" opacity=".6"/>
+              <text x="40" y="48" text-anchor="middle" font-size="10" fill="currentColor" font-weight="bold" font-family="serif">Au 999</text>
+              <line x1="20" y1="56" x2="60" y2="56" stroke="currentColor" stroke-width="1" opacity=".4"/>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--gold">Oro</div>
+          <h3 class="product-name">Barras de Oro</h3>
+          <p class="product-desc">Lingotes de 1g a 1kg de pureza 999.9‰. Ideales para inversión de largo plazo y reserva de valor.</p>
+          <div class="product-specs">
+            <span>Pureza: 999.9‰</span>
+            <span>1g – 1kg</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+        <!-- Silver Coins -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap product-icon-wrap--silver" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="32" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="40" cy="40" r="26" stroke="currentColor" stroke-width="1" opacity=".5"/>
+              <text x="40" y="36" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif" font-weight="bold">Ag</text>
+              <text x="40" y="52" text-anchor="middle" font-size="8" fill="currentColor" opacity=".7">999.9</text>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--silver">Plata</div>
+          <h3 class="product-name">Monedas de Plata</h3>
+          <p class="product-desc">Monedas de plata pura de ediciones limitadas y bullion clásico: 1 oz y formatos coleccionables.</p>
+          <div class="product-specs">
+            <span>Pureza: 999‰</span>
+            <span>Certificadas</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+        <!-- Silver Bars -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap product-icon-wrap--silver" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <rect x="12" y="26" width="56" height="34" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="20" y="20" width="40" height="10" rx="2" stroke="currentColor" stroke-width="1" opacity=".6"/>
+              <text x="40" y="48" text-anchor="middle" font-size="10" fill="currentColor" font-weight="bold" font-family="serif">Ag 999</text>
+              <line x1="20" y1="56" x2="60" y2="56" stroke="currentColor" stroke-width="1" opacity=".4"/>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--silver">Plata</div>
+          <h3 class="product-name">Barras de Plata</h3>
+          <p class="product-desc">Lingotes de plata de 100g a 1kg, perfectos para diversificar tu portafolio con menor inversión inicial.</p>
+          <div class="product-specs">
+            <span>Pureza: 999‰</span>
+            <span>100g – 1kg</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+        <!-- Collectibles -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <polygon points="40,12 48,30 68,30 52,44 58,62 40,50 22,62 28,44 12,30 32,30" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="1" opacity=".6"/>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--collect">Colección</div>
+          <h3 class="product-name">Coleccionables</h3>
+          <p class="product-desc">Piezas numismáticas de edición limitada, monedas conmemorativas y sets especiales con alto valor coleccionable.</p>
+          <div class="product-specs">
+            <span>Edición Limitada</span>
+            <span>Certificado NGC/PCGS</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+        <!-- Industrial -->
+        <article class="product-card reveal">
+          <div class="product-icon-wrap" aria-hidden="true">
+            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
+              <rect x="18" y="18" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="18" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="18" y="42" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="42" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="40" cy="40" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <div class="product-metal-tag product-metal-tag--industrial">Industrial</div>
+          <h3 class="product-name">Metales Industriales</h3>
+          <p class="product-desc">Granallas, chapas y formatos especiales de oro y plata para uso industrial, joyería y manufactura de precisión.</p>
+          <div class="product-specs">
+            <span>Alta Pureza</span>
+            <span>Formatos a medida</span>
+          </div>
+          <a href="#contacto" class="product-cta">Consultar Precio</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ NOSOTROS ═══════════════════════════ -->
+  <section class="section about" id="nosotros" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-frame">
+            <div class="about-image-inner">
+              <div class="about-symbol" aria-hidden="true">
+                <svg viewBox="0 0 160 160" fill="none">
+                  <circle cx="80" cy="80" r="70" stroke="#c9a84c" stroke-width="1" opacity=".3"/>
+                  <circle cx="80" cy="80" r="55" stroke="#c9a84c" stroke-width="1.5" opacity=".5"/>
+                  <circle cx="80" cy="80" r="40" stroke="#c9a84c" stroke-width="1" opacity=".3"/>
+                  <text x="80" y="72" text-anchor="middle" font-size="28" fill="#c9a84c" font-family="Georgia, serif" font-weight="bold">Au</text>
+                  <text x="80" y="96" text-anchor="middle" font-size="14" fill="#c9a84c" opacity=".7" font-family="Georgia, serif">Ag</text>
+                  <line x1="80" y1="20" x2="80" y2="36" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+                  <line x1="80" y1="124" x2="80" y2="140" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+                  <line x1="20" y1="80" x2="36" y2="80" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+                  <line x1="124" y1="80" x2="140" y2="80" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+                </svg>
+              </div>
+              <div class="about-years">
+                <span class="about-years-num">15+</span>
+                <span class="about-years-label">años de<br/>experiencia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-tag">Nosotros</span>
+          <h2 class="section-title" id="about-title">
+            Enkorp: su aliado en<br /><em class="gold-italic">metales preciosos</em>
+          </h2>
+          <div class="gold-divider gold-divider--left" aria-hidden="true"></div>
+          <p class="about-text">
+            Somos una empresa peruana fundada con la misión de democratizar el acceso a la inversión en metales preciosos. Desde Lima, servimos a clientes en todo el país con la más alta ética profesional y transparencia total en cada operación.
+          </p>
+          <p class="about-text">
+            Nuestro equipo de expertos en numismática y mercados de commodities te acompaña en cada etapa de tu inversión, garantizando autenticidad, precio justo y asesoría personalizada.
+          </p>
+
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <path d="M20 6l4 8 9 1.3-6.5 6.3 1.5 9L20 26l-8 4.6 1.5-9L7 15.3l9-1.3L20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="value-name">Confianza</h4>
+              <p class="value-desc">Más de 15 años construyendo relaciones sólidas con nuestros clientes.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="value-name">Calidad</h4>
+              <p class="value-desc">Solo trabajamos con metales certificados bajo los más estrictos estándares internacionales.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h4 class="value-name">Transparencia</h4>
+              <p class="value-desc">Precios claros, sin comisiones ocultas y con total trazabilidad en cada operación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+  <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title" id="testimonials-title">
+          Lo que dicen nuestros<br /><em class="gold-italic">clientes</em>
+        </h2>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-text">
+            "Llevo tres años invirtiendo con Enkorp y la experiencia ha sido excelente. Los asesores son muy profesionales, los precios competitivos y el proceso completamente transparente. Totalmente recomendados."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">
+              <span>CR</span>
+            </div>
+            <div class="author-info">
+              <cite class="author-name">Carlos Ramírez</cite>
+              <span class="author-role">Empresario, Lima</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card testimonial-card--featured reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-text">
+            "Comencé a diversificar mi portafolio con barras de oro gracias al asesoramiento de Enkorp. El equipo me explicó todo con claridad y hoy tengo una inversión sólida y segura. Es la empresa de metales preciosos más confiable de Lima."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">
+              <span>MV</span>
+            </div>
+            <div class="author-info">
+              <cite class="author-name">María Vargas</cite>
+              <span class="author-role">Arquitecta, Miraflores</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-text">
+            "Vendí mis monedas de plata con Enkorp y el proceso fue muy rápido y seguro. Me pagaron al precio de mercado, sin descuentos injustificados. Definitivamente volvería a trabajar con ellos."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">
+              <span>JP</span>
+            </div>
+            <div class="author-info">
+              <cite class="author-name">Jorge Palomino</cite>
+              <span class="author-role">Coleccionista, San Isidro</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section class="section contact" id="contacto" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title" id="contact-title">
+          Hablemos sobre tu<br /><em class="gold-italic">inversión</em>
+        </h2>
+        <div class="gold-divider" aria-hidden="true"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ej. Juan García" required autocomplete="name" />
+                <span class="form-error" id="nombreError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email" />
+                <span class="form-error" id="emailError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefono">Teléfono</label>
+              <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea class="form-input form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu interés en metales preciosos…" rows="5" required></textarea>
+              <span class="form-error" id="mensajeError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-submit" id="formSubmit">
+              <span class="btn-text">Enviar Mensaje</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 10l14-7-7 14-2-5-5-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              ✓ ¡Mensaje enviado! Nos pondremos en contacto contigo muy pronto.
+            </p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-info-inner">
+            <h3 class="contact-info-title">Información de Contacto</h3>
+
+            <ul class="contact-details">
+              <li class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Dirección</strong>
+                  <span>Lima, Perú<br/>San Isidro, Lima 27</span>
+                </div>
+              </li>
+              <li class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Teléfono</strong>
+                  <span><a href="tel:+51999000000">+51 999 000 000</a></span>
+                </div>
+              </li>
+              <li class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <span><a href="mailto:contacto@enkorp.pe">contacto@enkorp.pe</a></span>
+                </div>
+              </li>
+              <li class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Horario</strong>
+                  <span>Lun – Vie: 9am – 6pm<br/>Sáb: 9am – 1pm</span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Map placeholder -->
+            <div class="map-placeholder" role="img" aria-label="Ubicación de Enkorp en Lima, Perú">
+              <div class="map-inner">
+                <svg viewBox="0 0 200 120" fill="none" class="map-svg" aria-hidden="true">
+                  <!-- Simplified map illustration -->
+                  <rect width="200" height="120" fill="#111827" rx="8"/>
+                  <path d="M10 60 Q50 40 100 55 Q150 70 190 50" stroke="#1e3a5f" stroke-width="8" fill="none" opacity=".6"/>
+                  <path d="M0 80 Q60 65 120 75 Q160 82 200 70" stroke="#1e3a5f" stroke-width="5" fill="none" opacity=".4"/>
+                  <line x1="30" y1="0" x2="30" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="80" y1="0" x2="80" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="130" y1="0" x2="130" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="180" y1="0" x2="180" y2="120" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="0" y1="30" x2="200" y2="30" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="0" y1="60" x2="200" y2="60" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <line x1="0" y1="90" x2="200" y2="90" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
+                  <!-- Pin -->
+                  <circle cx="100" cy="58" r="6" fill="#c9a84c"/>
+                  <circle cx="100" cy="58" r="3" fill="#0a0e1a"/>
+                  <line x1="100" y1="64" x2="100" y2="75" stroke="#c9a84c" stroke-width="2"/>
+                  <!-- Pulse ring -->
+                  <circle cx="100" cy="58" r="12" stroke="#c9a84c" stroke-width="1" opacity=".4"/>
+                  <text x="100" y="95" text-anchor="middle" font-size="9" fill="#c9a84c" opacity=".8" font-family="Inter, sans-serif">Lima, Perú</text>
+                </svg>
+                <p class="map-label">San Isidro, Lima</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="#inicio" class="nav-logo footer-logo" aria-label="Enkorp inicio">
+              <span class="logo-text">ENK<span class="logo-accent">ORP</span></span>
+              <span class="logo-tagline">Metales Preciosos</span>
+            </a>
+            <p class="footer-desc">
+              Empresa peruana líder en la compra, venta y asesoría de metales preciosos. Inversión segura, transparente y garantizada.
+            </p>
+            <div class="social-links" aria-label="Redes sociales">
+              <a href="#" class="social-link" aria-label="Facebook de Enkorp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram de Enkorp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn de Enkorp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="WhatsApp de Enkorp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <nav class="footer-nav" aria-label="Navegación del pie de página">
+            <h4 class="footer-nav-title">Navegación</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <!-- Products links -->
+          <nav class="footer-nav" aria-label="Productos">
+            <h4 class="footer-nav-title">Productos</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#productos">Monedas de Oro</a></li>
+              <li><a href="#productos">Barras de Oro</a></li>
+              <li><a href="#productos">Monedas de Plata</a></li>
+              <li><a href="#productos">Barras de Plata</a></li>
+              <li><a href="#productos">Coleccionables</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4 class="footer-nav-title">Contacto</h4>
+            <address class="footer-address">
+              <p>Lima, Perú</p>
+              <p><a href="tel:+51999000000">+51 999 000 000</a></p>
+              <p><a href="mailto:contacto@enkorp.pe">contacto@enkorp.pe</a></p>
+            </address>
+            <a href="#contacto" class="btn-primary footer-cta">Contactar Ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span> Enkorp. Todos los derechos reservados.
+        </p>
+        <p class="footer-legal">
+          Lima, Perú &bull; Metales Preciosos Certificados
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
