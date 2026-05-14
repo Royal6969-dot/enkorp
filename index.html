@@ -28,6 +28,7 @@
           <li><a href="#inicio" class="nav-link">Inicio</a></li>
           <li><a href="#servicios" class="nav-link">Servicios</a></li>
           <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
           <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
@@ -43,16 +44,18 @@
     </div>
   </header>
 
-  <!-- TEST BANNER -->
-  <div style="background:#c9a84c; color:#0a0e1a; text-align:center; padding:30px; font-size:3rem; font-weight:900; letter-spacing:4px; font-family:'Playfair Display',serif;">
-    TEST MIJO
-  </div>
-
   <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
   <section class="hero" id="inicio" role="banner">
     <div class="hero-bg">
+      <img
+        class="hero-bg-img"
+        src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920&q=80"
+        alt="Barras de oro apiladas como fondo del héroe"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero-bg-overlay" aria-hidden="true"></div>
       <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
     </div>
 
     <div class="hero-content">
@@ -87,6 +90,13 @@
     </a>
   </section>
 
+  <!-- ═══════════════════════════ WAVY DIVIDER ═══════════════════════════ -->
+  <div class="wavy-divider wavy-divider--hero" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#111827"/>
+    </svg>
+  </div>
+
   <!-- ═══════════════════════════ STATS BAR ═══════════════════════════ -->
   <section class="stats-bar" id="estadisticas" aria-label="Estadísticas de la empresa">
     <div class="container">
@@ -109,6 +119,13 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════════ WAVY DIVIDER ═══════════════════════════ -->
+  <div class="wavy-divider wavy-divider--stats" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,60 L0,60 Z" fill="#0a0e1a"/>
+    </svg>
+  </div>
+
   <!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
   <section class="section services" id="servicios" aria-labelledby="services-title">
     <div class="container">
@@ -117,74 +134,114 @@
         <h2 class="section-title" id="services-title">
           Todo lo que necesitas para<br /><em class="gold-italic">invertir con seguridad</em>
         </h2>
-        <div class="gold-divider" aria-hidden="true"></div>
+        <div class="section-title-accent" aria-hidden="true"></div>
       </div>
 
       <div class="services-grid">
-        <!-- Card 1 -->
+        <!-- Card 1 – Compra -->
         <article class="service-card reveal">
-          <div class="service-icon-wrap" aria-hidden="true">
-            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
-              <path d="M20 36l6-8 6 6 6-10 6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 44h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="32" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
+          <div class="service-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80"
+              alt="Monedas de oro sobre mesa para servicio de compra"
+              class="service-card-img"
+              loading="lazy"
+            />
+            <div class="service-card-img-overlay" aria-hidden="true"></div>
           </div>
-          <h3 class="service-title">Compra de Metales</h3>
-          <p class="service-desc">
-            Adquiere monedas y barras de oro y plata con precios competitivos y certificados de autenticidad internacionales. Inversión respaldada desde el primer día.
-          </p>
-          <a href="#contacto" class="service-link">
-            Saber más
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
+          <div class="service-card-body">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+                <path d="M20 36l6-8 6 6 6-10 6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 44h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="32" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Compra de Metales</h3>
+            <p class="service-desc">
+              Adquiere monedas y barras de oro y plata con precios competitivos y certificados de autenticidad internacionales. Inversión respaldada desde el primer día.
+            </p>
+            <a href="#contacto" class="service-link">
+              Saber más
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Card 2 – Venta (featured) -->
         <article class="service-card service-card--featured reveal">
           <div class="service-badge" aria-label="Servicio destacado">Popular</div>
-          <div class="service-icon-wrap" aria-hidden="true">
-            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
-              <path d="M24 20h16l-4 8H28l-4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M24 28l-4 16h24l-4-16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M28 28v16M36 28v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+          <div class="service-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
+              alt="Monedas de plata para servicio de venta de metales"
+              class="service-card-img"
+              loading="lazy"
+            />
+            <div class="service-card-img-overlay" aria-hidden="true"></div>
           </div>
-          <h3 class="service-title">Venta de Metales</h3>
-          <p class="service-desc">
-            Vende tus metales al mejor precio del mercado. Evaluación transparente, pago inmediato y proceso seguro sin intermediarios ni costos ocultos.
-          </p>
-          <a href="#contacto" class="service-link">
-            Saber más
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
+          <div class="service-card-body">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+                <path d="M24 20h16l-4 8H28l-4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M24 28l-4 16h24l-4-16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M28 28v16M36 28v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Venta de Metales</h3>
+            <p class="service-desc">
+              Vende tus metales al mejor precio del mercado. Evaluación transparente, pago inmediato y proceso seguro sin intermediarios ni costos ocultos.
+            </p>
+            <a href="#contacto" class="service-link">
+              Saber más
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Card 3 – Asesoría -->
         <article class="service-card reveal">
-          <div class="service-icon-wrap" aria-hidden="true">
-            <svg class="service-icon" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
-              <path d="M22 42V28M32 42V22M42 42V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="22" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="32" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="42" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
+          <div class="service-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80"
+              alt="Reunión de asesoría de inversión en metales preciosos"
+              class="service-card-img"
+              loading="lazy"
+            />
+            <div class="service-card-img-overlay" aria-hidden="true"></div>
           </div>
-          <h3 class="service-title">Asesoría de Inversión</h3>
-          <p class="service-desc">
-            Nuestros expertos te guían para construir un portafolio diversificado en metales preciosos, adaptado a tus objetivos financieros y perfil de riesgo.
-          </p>
-          <a href="#contacto" class="service-link">
-            Saber más
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
+          <div class="service-card-body">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+                <path d="M22 42V28M32 42V22M42 42V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="32" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="42" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Asesoría de Inversión</h3>
+            <p class="service-desc">
+              Nuestros expertos te guían para construir un portafolio diversificado en metales preciosos, adaptado a tus objetivos financieros y perfil de riesgo.
+            </p>
+            <a href="#contacto" class="service-link">
+              Saber más
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
         </article>
       </div>
     </div>
   </section>
+
+  <!-- ═══════════════════════════ WAVY DIVIDER ═══════════════════════════ -->
+  <div class="wavy-divider wavy-divider--services" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C180,10 360,55 540,30 C720,5 900,50 1080,25 C1260,0 1380,45 1440,20 L1440,60 L0,60 Z" fill="#0d1223"/>
+    </svg>
+  </div>
 
   <!-- ═══════════════════════════ PRODUCTS ═══════════════════════════ -->
   <section class="section products" id="productos" aria-labelledby="products-title">
@@ -194,7 +251,7 @@
         <h2 class="section-title" id="products-title">
           Nuestros <em class="gold-italic">Productos</em>
         </h2>
-        <div class="gold-divider" aria-hidden="true"></div>
+        <div class="section-title-accent" aria-hidden="true"></div>
         <p class="section-subtitle">
           Piezas certificadas con los más altos estándares de pureza y calidad, disponibles para entrega inmediata.
         </p>
@@ -204,161 +261,227 @@
 
         <!-- Gold Coins -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <circle cx="40" cy="40" r="32" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="40" cy="40" r="26" stroke="currentColor" stroke-width="1" opacity=".5"/>
-              <text x="40" y="36" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif" font-weight="bold">Au</text>
-              <text x="40" y="52" text-anchor="middle" font-size="8" fill="currentColor" opacity=".7">999.9</text>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80"
+              alt="Monedas de oro American Eagle y Maple Leaf"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--gold">Oro</div>
-          <h3 class="product-name">Monedas de Oro</h3>
-          <p class="product-desc">Monedas soberanas y bullion de alta pureza: American Eagle, Maple Leaf, Krugerrand y más.</p>
-          <div class="product-specs">
-            <span>Pureza: 22–24k</span>
-            <span>Certificadas</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--gold">Oro</div>
+            <h3 class="product-name">Monedas de Oro</h3>
+            <p class="product-desc">Monedas soberanas y bullion de alta pureza: American Eagle, Maple Leaf, Krugerrand y más.</p>
+            <div class="product-specs">
+              <span>Pureza: 22–24k</span>
+              <span>Certificadas</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
         <!-- Gold Bars -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <rect x="12" y="26" width="56" height="34" rx="4" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="20" y="20" width="40" height="10" rx="2" stroke="currentColor" stroke-width="1" opacity=".6"/>
-              <text x="40" y="48" text-anchor="middle" font-size="10" fill="currentColor" font-weight="bold" font-family="serif">Au 999</text>
-              <line x1="20" y1="56" x2="60" y2="56" stroke="currentColor" stroke-width="1" opacity=".4"/>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80"
+              alt="Barras de oro apiladas de alta pureza 999.9"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--gold">Oro</div>
-          <h3 class="product-name">Barras de Oro</h3>
-          <p class="product-desc">Lingotes de 1g a 1kg de pureza 999.9‰. Ideales para inversión de largo plazo y reserva de valor.</p>
-          <div class="product-specs">
-            <span>Pureza: 999.9‰</span>
-            <span>1g – 1kg</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--gold">Oro</div>
+            <h3 class="product-name">Barras de Oro</h3>
+            <p class="product-desc">Lingotes de 1g a 1kg de pureza 999.9‰. Ideales para inversión de largo plazo y reserva de valor.</p>
+            <div class="product-specs">
+              <span>Pureza: 999.9‰</span>
+              <span>1g – 1kg</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
         <!-- Silver Coins -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap product-icon-wrap--silver" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <circle cx="40" cy="40" r="32" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="40" cy="40" r="26" stroke="currentColor" stroke-width="1" opacity=".5"/>
-              <text x="40" y="36" text-anchor="middle" font-size="14" fill="currentColor" font-family="serif" font-weight="bold">Ag</text>
-              <text x="40" y="52" text-anchor="middle" font-size="8" fill="currentColor" opacity=".7">999.9</text>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80"
+              alt="Monedas de plata pura de 1 onza troy"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--silver">Plata</div>
-          <h3 class="product-name">Monedas de Plata</h3>
-          <p class="product-desc">Monedas de plata pura de ediciones limitadas y bullion clásico: 1 oz y formatos coleccionables.</p>
-          <div class="product-specs">
-            <span>Pureza: 999‰</span>
-            <span>Certificadas</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--silver">Plata</div>
+            <h3 class="product-name">Monedas de Plata</h3>
+            <p class="product-desc">Monedas de plata pura de ediciones limitadas y bullion clásico: 1 oz y formatos coleccionables.</p>
+            <div class="product-specs">
+              <span>Pureza: 999‰</span>
+              <span>Certificadas</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
         <!-- Silver Bars -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap product-icon-wrap--silver" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <rect x="12" y="26" width="56" height="34" rx="4" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="20" y="20" width="40" height="10" rx="2" stroke="currentColor" stroke-width="1" opacity=".6"/>
-              <text x="40" y="48" text-anchor="middle" font-size="10" fill="currentColor" font-weight="bold" font-family="serif">Ag 999</text>
-              <line x1="20" y1="56" x2="60" y2="56" stroke="currentColor" stroke-width="1" opacity=".4"/>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1574607383476-f517f562d009?w=600&q=80"
+              alt="Barras de plata de 100g a 1 kilogramo"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--silver">Plata</div>
-          <h3 class="product-name">Barras de Plata</h3>
-          <p class="product-desc">Lingotes de plata de 100g a 1kg, perfectos para diversificar tu portafolio con menor inversión inicial.</p>
-          <div class="product-specs">
-            <span>Pureza: 999‰</span>
-            <span>100g – 1kg</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--silver">Plata</div>
+            <h3 class="product-name">Barras de Plata</h3>
+            <p class="product-desc">Lingotes de plata de 100g a 1kg, perfectos para diversificar tu portafolio con menor inversión inicial.</p>
+            <div class="product-specs">
+              <span>Pureza: 999‰</span>
+              <span>100g – 1kg</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
         <!-- Collectibles -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <polygon points="40,12 48,30 68,30 52,44 58,62 40,50 22,62 28,44 12,30 32,30" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="1" opacity=".6"/>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?w=600&q=80"
+              alt="Monedas coleccionables numismáticas de edición limitada"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--collect">Colección</div>
-          <h3 class="product-name">Coleccionables</h3>
-          <p class="product-desc">Piezas numismáticas de edición limitada, monedas conmemorativas y sets especiales con alto valor coleccionable.</p>
-          <div class="product-specs">
-            <span>Edición Limitada</span>
-            <span>Certificado NGC/PCGS</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--collect">Colección</div>
+            <h3 class="product-name">Coleccionables</h3>
+            <p class="product-desc">Piezas numismáticas de edición limitada, monedas conmemorativas y sets especiales con alto valor coleccionable.</p>
+            <div class="product-specs">
+              <span>Edición Limitada</span>
+              <span>Certificado NGC/PCGS</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
         <!-- Industrial -->
         <article class="product-card reveal">
-          <div class="product-icon-wrap" aria-hidden="true">
-            <svg class="product-icon" viewBox="0 0 80 80" fill="none">
-              <rect x="18" y="18" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="42" y="18" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="18" y="42" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="42" y="42" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="40" cy="40" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
-            </svg>
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=600&q=80"
+              alt="Metales industriales de alta pureza para manufactura"
+              class="product-img"
+              loading="lazy"
+            />
           </div>
-          <div class="product-metal-tag product-metal-tag--industrial">Industrial</div>
-          <h3 class="product-name">Metales Industriales</h3>
-          <p class="product-desc">Granallas, chapas y formatos especiales de oro y plata para uso industrial, joyería y manufactura de precisión.</p>
-          <div class="product-specs">
-            <span>Alta Pureza</span>
-            <span>Formatos a medida</span>
+          <div class="product-card-body">
+            <div class="product-metal-tag product-metal-tag--industrial">Industrial</div>
+            <h3 class="product-name">Metales Industriales</h3>
+            <p class="product-desc">Granallas, chapas y formatos especiales de oro y plata para uso industrial, joyería y manufactura de precisión.</p>
+            <div class="product-specs">
+              <span>Alta Pureza</span>
+              <span>Formatos a medida</span>
+            </div>
+            <a href="#contacto" class="product-cta">Ver más</a>
           </div>
-          <a href="#contacto" class="product-cta">Consultar Precio</a>
         </article>
 
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════════ WAVY DIVIDER ═══════════════════════════ -->
+  <div class="wavy-divider wavy-divider--products" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,10 C300,55 600,0 900,35 C1100,58 1300,10 1440,40 L1440,60 L0,60 Z" fill="#080c18"/>
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════ GALERÍA ═══════════════════════════ -->
+  <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Colección Visual</span>
+        <h2 class="section-title" id="gallery-title">
+          Nuestra <em class="gold-italic">Colección</em>
+        </h2>
+        <div class="section-title-accent" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Descubre la belleza y valor de nuestros metales preciosos a través de cada pieza única.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall reveal">
+          <img
+            src="https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=600&q=80"
+            alt="Monedas de oro dispuestas artísticamente"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Monedas de Oro</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80"
+            alt="Barras de oro en detalle"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Barras de Oro</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80"
+            alt="Colección de monedas de plata"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Monedas de Plata</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide reveal">
+          <img
+            src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?w=600&q=80"
+            alt="Piezas coleccionables numismáticas raras"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Coleccionables Exclusivos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ WAVY DIVIDER ═══════════════════════════ -->
+  <div class="wavy-divider wavy-divider--gallery" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,5 480,55 720,20 C960,−5 1200,50 1440,15 L1440,60 L0,60 Z" fill="#0a0e1a"/>
+    </svg>
+  </div>
+
   <!-- ═══════════════════════════ NOSOTROS ═══════════════════════════ -->
   <section class="section about" id="nosotros" aria-labelledby="about-title">
     <div class="container">
       <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-image-frame">
-            <div class="about-image-inner">
-              <div class="about-symbol" aria-hidden="true">
-                <svg viewBox="0 0 160 160" fill="none">
-                  <circle cx="80" cy="80" r="70" stroke="#c9a84c" stroke-width="1" opacity=".3"/>
-                  <circle cx="80" cy="80" r="55" stroke="#c9a84c" stroke-width="1.5" opacity=".5"/>
-                  <circle cx="80" cy="80" r="40" stroke="#c9a84c" stroke-width="1" opacity=".3"/>
-                  <text x="80" y="72" text-anchor="middle" font-size="28" fill="#c9a84c" font-family="Georgia, serif" font-weight="bold">Au</text>
-                  <text x="80" y="96" text-anchor="middle" font-size="14" fill="#c9a84c" opacity=".7" font-family="Georgia, serif">Ag</text>
-                  <line x1="80" y1="20" x2="80" y2="36" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
-                  <line x1="80" y1="124" x2="80" y2="140" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
-                  <line x1="20" y1="80" x2="36" y2="80" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
-                  <line x1="124" y1="80" x2="140" y2="80" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
-                </svg>
-              </div>
-              <div class="about-years">
-                <span class="about-years-num">15+</span>
-                <span class="about-years-label">años de<br/>experiencia</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="about-content reveal">
           <span class="section-tag">Nosotros</span>
           <h2 class="section-title" id="about-title">
             Enkorp: su aliado en<br /><em class="gold-italic">metales preciosos</em>
           </h2>
-          <div class="gold-divider gold-divider--left" aria-hidden="true"></div>
+          <div class="section-title-accent section-title-accent--left" aria-hidden="true"></div>
           <p class="about-text">
             Somos una empresa peruana fundada con la misión de democratizar el acceso a la inversión en metales preciosos. Desde Lima, servimos a clientes en todo el país con la más alta ética profesional y transparencia total en cada operación.
           </p>
@@ -399,6 +522,21 @@
             </div>
           </div>
         </div>
+
+        <div class="about-visual reveal">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
+              alt="Edificio moderno de oficinas sede de Enkorp en Lima"
+              class="about-img"
+              loading="lazy"
+            />
+            <div class="about-badge">
+              <span class="about-years-num">15+</span>
+              <span class="about-years-label">años de<br/>experiencia</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -411,7 +549,7 @@
         <h2 class="section-title" id="testimonials-title">
           Lo que dicen nuestros<br /><em class="gold-italic">clientes</em>
         </h2>
-        <div class="gold-divider" aria-hidden="true"></div>
+        <div class="section-title-accent" aria-hidden="true"></div>
       </div>
 
       <div class="testimonials-grid">
@@ -482,7 +620,7 @@
         <h2 class="section-title" id="contact-title">
           Hablemos sobre tu<br /><em class="gold-italic">inversión</em>
         </h2>
-        <div class="gold-divider" aria-hidden="true"></div>
+        <div class="section-title-accent" aria-hidden="true"></div>
       </div>
 
       <div class="contact-grid">
@@ -580,7 +718,6 @@
             <div class="map-placeholder" role="img" aria-label="Ubicación de Enkorp en Lima, Perú">
               <div class="map-inner">
                 <svg viewBox="0 0 200 120" fill="none" class="map-svg" aria-hidden="true">
-                  <!-- Simplified map illustration -->
                   <rect width="200" height="120" fill="#111827" rx="8"/>
                   <path d="M10 60 Q50 40 100 55 Q150 70 190 50" stroke="#1e3a5f" stroke-width="8" fill="none" opacity=".6"/>
                   <path d="M0 80 Q60 65 120 75 Q160 82 200 70" stroke="#1e3a5f" stroke-width="5" fill="none" opacity=".4"/>
@@ -591,11 +728,9 @@
                   <line x1="0" y1="30" x2="200" y2="30" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
                   <line x1="0" y1="60" x2="200" y2="60" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
                   <line x1="0" y1="90" x2="200" y2="90" stroke="#1e3a5f" stroke-width="1" opacity=".2"/>
-                  <!-- Pin -->
                   <circle cx="100" cy="58" r="6" fill="#c9a84c"/>
                   <circle cx="100" cy="58" r="3" fill="#0a0e1a"/>
                   <line x1="100" y1="64" x2="100" y2="75" stroke="#c9a84c" stroke-width="2"/>
-                  <!-- Pulse ring -->
                   <circle cx="100" cy="58" r="12" stroke="#c9a84c" stroke-width="1" opacity=".4"/>
                   <text x="100" y="95" text-anchor="middle" font-size="9" fill="#c9a84c" opacity=".8" font-family="Inter, sans-serif">Lima, Perú</text>
                 </svg>
@@ -650,6 +785,7 @@
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#servicios">Servicios</a></li>
               <li><a href="#productos">Productos</a></li>
+              <li><a href="#galeria">Galería</a></li>
               <li><a href="#nosotros">Nosotros</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
